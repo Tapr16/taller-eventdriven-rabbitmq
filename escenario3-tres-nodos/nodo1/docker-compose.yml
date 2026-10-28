@@ -1,0 +1,40 @@
+# ESCENARIO 3 - NODO 1: primer conjunto (Python + Java)
+#   productores: ordenes (Python), pagos (Java)
+#   consumidores: notificaciones (Python), facturacion (Java)
+# El broker vive en el Nodo 3. Su IP se configura en el archivo .env (BROKER_IP).
+#   docker compose up --build
+name: esc3-nodo1
+
+x-rabbit-env: &rabbit-env
+  RABBITMQ_HOST: ${BROKER_IP:-host.docker.internal}
+  RABBITMQ_PORT: ${BROKER_PORT:-5672}
+  RABBITMQ_USER: ${RABBITMQ_USER:-admin}
+  RABBITMQ_PASS: ${RABBITMQ_PASS:-admin123}
+  NODO: esc3-nodo1
+
+x-servicio: &servicio
+  restart: unless-stopped
+  environment: *rabbit-env
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+services:
+  productor-python:
+    <<: *servicio
+    build: ../../productores/python-ordenes
+    container_name: esc3-n1-productor-python
+
+  productor-java:
+    <<: *servicio
+    build: ../../productores/java-pagos
+    container_name: esc3-n1-productor-java
+
+  consumidor-python:
+    <<: *servicio
+    build: ../../consumidores/python-notificaciones
+    container_name: esc3-n1-consumidor-python
+
+  consumidor-java:
+    <<: *servicio
+    build: ../../consumidores/java-facturacion
+    container_name: esc3-n1-consumidor-java

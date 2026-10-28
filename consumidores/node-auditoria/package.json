@@ -1,0 +1,9 @@
+{
+  "name": "consumidor-auditoria",
+  "version": "1.0.0",
+  "private": true,
+  "main": "consumer.js",
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}

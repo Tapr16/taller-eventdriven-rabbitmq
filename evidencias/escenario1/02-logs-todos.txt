@@ -1,0 +1,48 @@
+﻿esc1-productor-java     | [productor-java] -> pago.aprobado orden=5464 monto=1844.36 metodo=tarjeta
+esc1-productor-java     | [productor-java] -> pago.aprobado orden=5967 monto=1409.68 metodo=nequi
+esc1-productor-java     | [productor-java] -> pago.aprobado orden=2777 monto=312.04 metodo=tarjeta
+esc1-productor-java     | [productor-java] -> pago.aprobado orden=6819 monto=985.85 metodo=efectivo
+esc1-productor-java     | [productor-java] -> pago.rechazado orden=7264 monto=162.78 metodo=efectivo
+esc1-productor-java     | [productor-java] -> pago.aprobado orden=9886 monto=1051.53 metodo=efectivo
+esc1-consumidor-go      | [consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=25 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+esc1-consumidor-go      | [consumidor-go@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | ordenes=25 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+esc1-consumidor-go      | [consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=26 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+esc1-consumidor-go      | [consumidor-go@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | ordenes=26 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2
+esc1-consumidor-go      | [consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=27 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2
+esc1-consumidor-go      | [consumidor-go@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | ordenes=27 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2
+esc1-productor-go       | [productor-go] -> envio.entregado {"ciudad":"Medellin","orden_id":1860,"transportadora":"InterRapidisimo"}
+esc1-productor-go       | [productor-go] -> envio.despachado {"ciudad":"Barranquilla","orden_id":1551,"transportadora":"InterRapidisimo"}
+esc1-productor-go       | [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":2395,"transportadora":"Servientrega"}
+esc1-productor-go       | [productor-go] -> envio.despachado {"ciudad":"Barranquilla","orden_id":2239,"transportadora":"Coordinadora"}
+esc1-productor-go       | [productor-go] -> envio.entregado {"ciudad":"Barranquilla","orden_id":4162,"transportadora":"Envia"}
+esc1-productor-go       | [productor-go] -> envio.despachado {"ciudad":"Barranquilla","orden_id":3766,"transportadora":"InterRapidisimo"}
+esc1-consumidor-node    | [consumidor-node@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | AUDITORIA id=8d7fba8d
+esc1-consumidor-java    | [consumidor-java@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | Factura FV-00010 emitida: orden #5464, subtotal 1844.36 + IVA 350.43 = 2194.79
+esc1-productor-python   | [productor-python] -> orden.creada {'orden_id': 8716, 'cliente': 'pedro', 'producto': 'Teclado', 'cantidad': 2}
+esc1-consumidor-java    | [consumidor-java@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | Factura FV-00011 emitida: orden #5967, subtotal 1409.68 + IVA 267.84 = 1677.52
+esc1-productor-python   | [productor-python] -> orden.creada {'orden_id': 7328, 'cliente': 'juan', 'producto': 'Monitor', 'cantidad': 5}
+esc1-consumidor-node    | [consumidor-node@nodo-unico] <- orden.creada de productor-python@nodo-unico | AUDITORIA id=b9057dd7
+esc1-consumidor-python  | [consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a luisa: tu orden #4863 (2x Audifonos) fue recibida
+esc1-productor-node     | [productor-node] -> inventario.actualizado {"producto":"Teclado","bodega":"bodega-sur","stock":44}
+esc1-productor-node     | [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-centro","stock":22}
+esc1-consumidor-java    | [consumidor-java@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | Factura FV-00012 emitida: orden #2777, subtotal 312.04 + IVA 59.29 = 371.33
+esc1-consumidor-java    | [consumidor-java@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | Factura FV-00013 emitida: orden #6819, subtotal 985.85 + IVA 187.31 = 1173.16
+esc1-consumidor-java    | [consumidor-java@nodo-unico] <- pago.rechazado de productor-java@nodo-unico | Orden #7264 anulada: pago rechazado (efectivo)
+esc1-consumidor-java    | [consumidor-java@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | Factura FV-00014 emitida: orden #9886, subtotal 1051.53 + IVA 199.79 = 1251.32
+esc1-productor-python   | [productor-python] -> orden.creada {'orden_id': 4863, 'cliente': 'luisa', 'producto': 'Audifonos', 'cantidad': 2}
+esc1-productor-node     | [productor-node] -> inventario.actualizado {"producto":"Teclado","bodega":"bodega-norte","stock":27}
+esc1-productor-python   | [productor-python] -> orden.creada {'orden_id': 3705, 'cliente': 'carlos', 'producto': 'Teclado', 'cantidad': 4}
+esc1-productor-python   | [productor-python] -> orden.creada {'orden_id': 3864, 'cliente': 'luisa', 'producto': 'Laptop', 'cantidad': 3}
+esc1-productor-node     | [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-centro","stock":49}
+esc1-productor-python   | [productor-python] -> orden.creada {'orden_id': 5143, 'cliente': 'carlos', 'producto': 'Audifonos', 'cantidad': 3}
+esc1-consumidor-node    | [consumidor-node@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | AUDITORIA id=030166c7
+esc1-consumidor-node    | [consumidor-node@nodo-unico] <- envio.despachado de productor-go@nodo-unico | AUDITORIA id=ea669415
+esc1-consumidor-node    | [consumidor-node@nodo-unico] <- orden.creada de productor-python@nodo-unico | AUDITORIA id=a0f04fbd
+esc1-consumidor-node    | [consumidor-node@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | AUDITORIA id=99202085
+esc1-productor-node     | [productor-node] -> inventario.actualizado {"producto":"Teclado","bodega":"bodega-sur","stock":12}
+esc1-productor-node     | [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-centro","stock":16}
+esc1-consumidor-python  | [consumidor-python@nodo-unico] <- envio.entregado de productor-go@nodo-unico | SMS: la orden #4162 fue entregada (Envia, Barranquilla)
+esc1-consumidor-python  | [consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a carlos: tu orden #3705 (4x Teclado) fue recibida
+esc1-consumidor-python  | [consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a luisa: tu orden #3864 (3x Laptop) fue recibida
+esc1-consumidor-python  | [consumidor-python@nodo-unico] <- envio.despachado de productor-go@nodo-unico | SMS: la orden #3766 va en camino (InterRapidisimo, Barranquilla)
+esc1-consumidor-python  | [consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a carlos: tu orden #5143 (3x Audifonos) fue recibida

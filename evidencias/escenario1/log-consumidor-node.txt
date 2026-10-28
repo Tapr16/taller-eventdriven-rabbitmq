@@ -1,0 +1,12 @@
+﻿[consumidor-node@nodo-unico] <- envio.despachado de productor-go@nodo-unico | AUDITORIA id=52349cbe
+[consumidor-node@nodo-unico] <- orden.creada de productor-python@nodo-unico | AUDITORIA id=2c8b19fc
+[consumidor-node@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | AUDITORIA id=389c428c
+[consumidor-node@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | AUDITORIA id=7026bb3f
+[consumidor-node@nodo-unico] <- orden.creada de productor-python@nodo-unico | AUDITORIA id=92132f88
+[consumidor-node@nodo-unico] <- envio.entregado de productor-go@nodo-unico | AUDITORIA id=3256753e
+[consumidor-node@nodo-unico] <- pago.rechazado de productor-java@nodo-unico | AUDITORIA id=46a1f70c
+[consumidor-node@nodo-unico] <- orden.creada de productor-python@nodo-unico | AUDITORIA id=01458dcb
+[consumidor-node@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | AUDITORIA id=8d7fba8d
+[consumidor-node@nodo-unico] <- orden.creada de productor-python@nodo-unico | AUDITORIA id=b9057dd7
+[consumidor-node@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | AUDITORIA id=030166c7
+[consumidor-node@nodo-unico] <- envio.despachado de productor-go@nodo-unico | AUDITORIA id=ea669415

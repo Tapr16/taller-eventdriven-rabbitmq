@@ -1,0 +1,9 @@
+{
+  "name": "productor-inventario",
+  "version": "1.0.0",
+  "private": true,
+  "main": "producer.js",
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}

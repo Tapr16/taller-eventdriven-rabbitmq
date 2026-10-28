@@ -1,0 +1,14 @@
+﻿
+Conexion AMQP                user  state  
+-------------                ----  -----  
+consumidor-go@esc2-nodo1     admin running
+consumidor-java@esc2-nodo1   admin running
+consumidor-node@esc2-nodo1   admin running
+consumidor-python@esc2-nodo1 admin running
+productor-go@esc2-nodo1      admin running
+productor-java@esc2-nodo1    admin running
+productor-node@esc2-nodo1    admin running
+productor-python@esc2-nodo1  admin running
+
+
+

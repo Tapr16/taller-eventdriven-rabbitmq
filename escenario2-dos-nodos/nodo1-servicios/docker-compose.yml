@@ -1,0 +1,62 @@
+# ESCENARIO 2 - NODO 1: 4 productores + 4 consumidores
+# El broker vive en otro PC (Nodo 2). Su IP se configura en el archivo .env (BROKER_IP).
+#   docker compose up --build
+name: esc2-nodo1-servicios
+
+x-rabbit-env: &rabbit-env
+  RABBITMQ_HOST: ${BROKER_IP:-host.docker.internal}
+  RABBITMQ_PORT: ${BROKER_PORT:-5672}
+  RABBITMQ_USER: ${RABBITMQ_USER:-admin}
+  RABBITMQ_PASS: ${RABBITMQ_PASS:-admin123}
+  NODO: esc2-nodo1
+
+x-servicio: &servicio
+  restart: unless-stopped
+  environment: *rabbit-env
+  extra_hosts:
+    - "host.docker.internal:host-gateway"   # solo se usa si se prueba todo en un mismo PC
+
+services:
+  # ---------- Productores ----------
+  productor-python:
+    <<: *servicio
+    build: ../../productores/python-ordenes
+    container_name: esc2-productor-python
+
+  productor-java:
+    <<: *servicio
+    build: ../../productores/java-pagos
+    container_name: esc2-productor-java
+
+  productor-node:
+    <<: *servicio
+    build: ../../productores/node-inventario
+    container_name: esc2-productor-node
+
+  productor-go:
+    <<: *servicio
+    build: ../../productores/go-envios
+    container_name: esc2-productor-go
+
+  # ---------- Consumidores ----------
+  consumidor-python:
+    <<: *servicio
+    build: ../../consumidores/python-notificaciones
+    container_name: esc2-consumidor-python
+
+  consumidor-java:
+    <<: *servicio
+    build: ../../consumidores/java-facturacion
+    container_name: esc2-consumidor-java
+
+  consumidor-node:
+    <<: *servicio
+    build: ../../consumidores/node-auditoria
+    container_name: esc2-consumidor-node
+    ports:
+      - "8080:8080"
+
+  consumidor-go:
+    <<: *servicio
+    build: ../../consumidores/go-analitica
+    container_name: esc2-consumidor-go

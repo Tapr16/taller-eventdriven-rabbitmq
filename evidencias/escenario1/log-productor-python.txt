@@ -1,0 +1,12 @@
+﻿[productor-python] -> orden.creada {'orden_id': 8166, 'cliente': 'pedro', 'producto': 'Laptop', 'cantidad': 4}
+[productor-python] -> orden.creada {'orden_id': 6881, 'cliente': 'juan', 'producto': 'Teclado', 'cantidad': 2}
+[productor-python] -> orden.creada {'orden_id': 9049, 'cliente': 'pedro', 'producto': 'Mouse', 'cantidad': 5}
+[productor-python] -> orden.creada {'orden_id': 2294, 'cliente': 'ana', 'producto': 'Laptop', 'cantidad': 5}
+[productor-python] -> orden.creada {'orden_id': 8951, 'cliente': 'ana', 'producto': 'Monitor', 'cantidad': 1}
+[productor-python] -> orden.creada {'orden_id': 7352, 'cliente': 'pedro', 'producto': 'Audifonos', 'cantidad': 5}
+[productor-python] -> orden.creada {'orden_id': 6343, 'cliente': 'pedro', 'producto': 'Webcam', 'cantidad': 2}
+[productor-python] -> orden.creada {'orden_id': 8716, 'cliente': 'pedro', 'producto': 'Teclado', 'cantidad': 2}
+[productor-python] -> orden.creada {'orden_id': 7328, 'cliente': 'juan', 'producto': 'Monitor', 'cantidad': 5}
+[productor-python] -> orden.creada {'orden_id': 4863, 'cliente': 'luisa', 'producto': 'Audifonos', 'cantidad': 2}
+[productor-python] -> orden.creada {'orden_id': 3705, 'cliente': 'carlos', 'producto': 'Teclado', 'cantidad': 4}
+[productor-python] -> orden.creada {'orden_id': 3864, 'cliente': 'luisa', 'producto': 'Laptop', 'cantidad': 3}

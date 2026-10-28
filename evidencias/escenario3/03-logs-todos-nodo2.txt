@@ -1,0 +1,465 @@
+﻿esc3-n2-consumidor-node  | 2026-10-28T14:31:56.329676600Z [consumidor-node] UI web en http://localhost:8080
+esc3-n2-consumidor-node  | 2026-10-28T14:31:56.381135800Z [consumidor-node] Escuchando 'q.auditoria' con bindings ["#"]
+esc3-n2-consumidor-node  | 2026-10-28T14:31:56.603154900Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=439019ca
+esc3-n2-consumidor-node  | 2026-10-28T14:31:56.988859200Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=d2860a2e
+esc3-n2-consumidor-node  | 2026-10-28T14:31:59.281431400Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=a52431a3
+esc3-n2-consumidor-node  | 2026-10-28T14:32:00.990811400Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=7cb52766
+esc3-n2-consumidor-node  | 2026-10-28T14:32:01.603552600Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=54f8ca8d
+esc3-n2-consumidor-node  | 2026-10-28T14:32:02.285193100Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=08b7e7aa
+esc3-n2-productor-go     | 2026-10-28T14:31:56.376998400Z [productor-go] Conectado a 10.6.62.18:5672, publicando en 'tienda.eventos'
+esc3-n2-productor-node   | 2026-10-28T14:31:56.588497200Z [productor-node] Conectado a 10.6.62.18:5672, publicando en 'tienda.eventos'
+esc3-n2-productor-node   | 2026-10-28T14:31:56.597961700Z [productor-node] -> inventario.agotado {"producto":"Laptop","bodega":"bodega-sur","stock":4}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:02.382096800Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=a11e63d2
+esc3-n2-productor-node   | 2026-10-28T14:32:01.599564600Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-norte","stock":18}
+esc3-n2-productor-node   | 2026-10-28T14:32:06.601083400Z [productor-node] -> inventario.agotado {"producto":"Mouse","bodega":"bodega-norte","stock":4}
+esc3-n2-productor-node   | 2026-10-28T14:32:11.607982913Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-sur","stock":21}
+esc3-n2-productor-node   | 2026-10-28T14:32:16.614072350Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-norte","stock":8}
+esc3-n2-productor-node   | 2026-10-28T14:32:21.619896964Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-sur","stock":19}
+esc3-n2-productor-node   | 2026-10-28T14:32:26.620370166Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-sur","stock":13}
+esc3-n2-productor-node   | 2026-10-28T14:32:31.626179880Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-sur","stock":38}
+esc3-n2-productor-node   | 2026-10-28T14:32:36.631979764Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-sur","stock":49}
+esc3-n2-productor-node   | 2026-10-28T14:32:41.634488066Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-sur","stock":25}
+esc3-n2-productor-node   | 2026-10-28T14:32:46.640539438Z [productor-node] -> inventario.agotado {"producto":"Teclado","bodega":"bodega-sur","stock":4}
+esc3-n2-productor-node   | 2026-10-28T14:32:51.646700862Z [productor-node] -> inventario.actualizado {"producto":"Monitor","bodega":"bodega-sur","stock":15}
+esc3-n2-productor-node   | 2026-10-28T14:32:56.645491497Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-norte","stock":44}
+esc3-n2-productor-go     | 2026-10-28T14:31:56.377111900Z [productor-go] -> envio.entregado {"ciudad":"Medellin","orden_id":3126,"transportadora":"Coordinadora"}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:04.990442500Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=8b162fd3
+esc3-n2-consumidor-node  | 2026-10-28T14:32:05.286584700Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=3087b8f9
+esc3-n2-consumidor-go    | 2026-10-28T14:31:56.038839800Z [consumidor-go] Escuchando 'q.analitica' con bindings [orden.* inventario.* pago.*]
+esc3-n2-consumidor-go    | 2026-10-28T14:31:56.278567300Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=1 pagos_ok=0 pagos_fail=0 ventas=0.00 alertas_stock=0
+esc3-n2-productor-node   | 2026-10-28T14:33:01.651110930Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-norte","stock":22}
+esc3-n2-productor-node   | 2026-10-28T14:33:06.656701200Z [productor-node] -> inventario.agotado {"producto":"Laptop","bodega":"bodega-centro","stock":2}
+esc3-n2-productor-node   | 2026-10-28T14:33:11.662292048Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-sur","stock":47}
+esc3-n2-productor-node   | 2026-10-28T14:33:16.668171464Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-centro","stock":14}
+esc3-n2-productor-node   | 2026-10-28T14:33:21.670995995Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-sur","stock":47}
+esc3-n2-productor-node   | 2026-10-28T14:33:26.672267209Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-norte","stock":19}
+esc3-n2-productor-node   | 2026-10-28T14:33:31.677560443Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-sur","stock":29}
+esc3-n2-productor-node   | 2026-10-28T14:33:36.682411069Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-sur","stock":9}
+esc3-n2-productor-node   | 2026-10-28T14:33:41.687501936Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-norte","stock":32}
+esc3-n2-productor-node   | 2026-10-28T14:33:46.693454926Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-centro","stock":43}
+esc3-n2-productor-node   | 2026-10-28T14:33:51.696458083Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-centro","stock":30}
+esc3-n2-productor-node   | 2026-10-28T14:33:56.697577343Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-norte","stock":47}
+esc3-n2-consumidor-go    | 2026-10-28T14:31:56.600980600Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=1 pagos_ok=0 pagos_fail=0 ventas=0.00 alertas_stock=1
+esc3-n2-consumidor-go    | 2026-10-28T14:31:56.988748600Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=1 pagos_ok=1 pagos_fail=0 ventas=977.22 alertas_stock=1
+esc3-n2-productor-node   | 2026-10-28T14:34:01.703385883Z [productor-node] -> inventario.agotado {"producto":"Audifonos","bodega":"bodega-sur","stock":2}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:06.605115900Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=cf81204f
+esc3-n2-consumidor-node  | 2026-10-28T14:32:08.286338300Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=361ea066
+esc3-n2-consumidor-go    | 2026-10-28T14:31:59.281298300Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=2 pagos_ok=1 pagos_fail=0 ventas=977.22 alertas_stock=1
+esc3-n2-consumidor-go    | 2026-10-28T14:32:00.990432800Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=2 pagos_ok=2 pagos_fail=0 ventas=1829.37 alertas_stock=1
+esc3-n2-consumidor-go    | 2026-10-28T14:32:01.603136600Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=2 pagos_ok=2 pagos_fail=0 ventas=1829.37 alertas_stock=1
+esc3-n2-consumidor-node  | 2026-10-28T14:32:08.381861300Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=082ca537
+esc3-n2-productor-node   | 2026-10-28T14:34:06.708860522Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-centro","stock":16}
+esc3-n2-productor-node   | 2026-10-28T14:34:11.714482341Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-centro","stock":15}
+esc3-n2-productor-node   | 2026-10-28T14:34:16.720159287Z [productor-node] -> inventario.actualizado {"producto":"Teclado","bodega":"bodega-norte","stock":22}
+esc3-n2-productor-node   | 2026-10-28T14:34:21.724473279Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-centro","stock":23}
+esc3-n2-productor-node   | 2026-10-28T14:34:26.724891949Z [productor-node] -> inventario.actualizado {"producto":"Monitor","bodega":"bodega-norte","stock":47}
+esc3-n2-productor-node   | 2026-10-28T14:34:31.730817713Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-norte","stock":5}
+esc3-n2-productor-node   | 2026-10-28T14:34:36.736714330Z [productor-node] -> inventario.agotado {"producto":"Audifonos","bodega":"bodega-norte","stock":3}
+esc3-n2-productor-node   | 2026-10-28T14:34:41.742617556Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-centro","stock":7}
+esc3-n2-productor-go     | 2026-10-28T14:32:02.378122500Z [productor-go] -> envio.entregado {"ciudad":"Cali","orden_id":9218,"transportadora":"Coordinadora"}
+esc3-n2-productor-go     | 2026-10-28T14:32:08.378878100Z [productor-go] -> envio.despachado {"ciudad":"Medellin","orden_id":1485,"transportadora":"Servientrega"}
+esc3-n2-productor-go     | 2026-10-28T14:32:14.381877150Z [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":8775,"transportadora":"Servientrega"}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:02.284784100Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=3 pagos_ok=2 pagos_fail=0 ventas=1829.37 alertas_stock=1
+esc3-n2-consumidor-go    | 2026-10-28T14:32:04.990026200Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=3 pagos_ok=2 pagos_fail=1 ventas=1829.37 alertas_stock=1
+esc3-n2-consumidor-go    | 2026-10-28T14:32:05.285963100Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=4 pagos_ok=2 pagos_fail=1 ventas=1829.37 alertas_stock=1
+esc3-n2-consumidor-go    | 2026-10-28T14:32:06.604883200Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=4 pagos_ok=2 pagos_fail=1 ventas=1829.37 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:08.286281900Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=5 pagos_ok=2 pagos_fail=1 ventas=1829.37 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:08.991443400Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=5 pagos_ok=2 pagos_fail=2 ventas=1829.37 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:11.292952125Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=6 pagos_ok=2 pagos_fail=2 ventas=1829.37 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:11.611656304Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=6 pagos_ok=2 pagos_fail=2 ventas=1829.37 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:12.995511049Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=6 pagos_ok=3 pagos_fail=2 ventas=3370.65 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:14.297010650Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=7 pagos_ok=3 pagos_fail=2 ventas=3370.65 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:16.618109350Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=7 pagos_ok=3 pagos_fail=2 ventas=3370.65 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:16.996303950Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=7 pagos_ok=4 pagos_fail=2 ventas=4522.09 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:17.300685050Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=8 pagos_ok=4 pagos_fail=2 ventas=4522.09 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:20.302180269Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=9 pagos_ok=4 pagos_fail=2 ventas=4522.09 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:20.996581478Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=9 pagos_ok=5 pagos_fail=2 ventas=5204.97 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:21.623683483Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=9 pagos_ok=5 pagos_fail=2 ventas=5204.97 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:23.305490432Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=10 pagos_ok=5 pagos_fail=2 ventas=5204.97 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:24.995766374Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=10 pagos_ok=6 pagos_fail=2 ventas=6838.44 alertas_stock=2
+esc3-n2-productor-node   | 2026-10-28T14:34:46.743757762Z [productor-node] -> inventario.actualizado {"producto":"Teclado","bodega":"bodega-sur","stock":27}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:26.308991229Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=11 pagos_ok=6 pagos_fail=2 ventas=6838.44 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:26.623250234Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=11 pagos_ok=6 pagos_fail=2 ventas=6838.44 alertas_stock=2
+esc3-n2-consumidor-node  | 2026-10-28T14:32:08.991881000Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=b3fb5ba7
+esc3-n2-productor-node   | 2026-10-28T14:34:51.747798832Z [productor-node] -> inventario.actualizado {"producto":"Audifonos","bodega":"bodega-norte","stock":15}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:28.997595541Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=11 pagos_ok=6 pagos_fail=3 ventas=6838.44 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:29.312455309Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=12 pagos_ok=6 pagos_fail=3 ventas=6838.44 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:31.629149553Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=12 pagos_ok=6 pagos_fail=3 ventas=6838.44 alertas_stock=2
+esc3-n2-consumidor-node  | 2026-10-28T14:32:11.293123364Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c8de9784
+esc3-n2-consumidor-node  | 2026-10-28T14:32:11.611749004Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=8e86ea98
+esc3-n2-consumidor-node  | 2026-10-28T14:32:12.995590349Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=77323201
+esc3-n2-consumidor-node  | 2026-10-28T14:32:14.297354450Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=9807c265
+esc3-n2-consumidor-node  | 2026-10-28T14:32:14.385445350Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=c471717e
+esc3-n2-consumidor-node  | 2026-10-28T14:32:16.618409450Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=33b27b10
+esc3-n2-productor-go     | 2026-10-28T14:32:20.385613677Z [productor-go] -> envio.entregado {"ciudad":"Barranquilla","orden_id":8262,"transportadora":"InterRapidisimo"}
+esc3-n2-productor-go     | 2026-10-28T14:32:26.384982005Z [productor-go] -> envio.entregado {"ciudad":"Medellin","orden_id":9202,"transportadora":"Envia"}
+esc3-n2-productor-go     | 2026-10-28T14:32:32.386386427Z [productor-go] -> envio.despachado {"ciudad":"Barranquilla","orden_id":8232,"transportadora":"Servientrega"}
+esc3-n2-productor-go     | 2026-10-28T14:32:38.388359241Z [productor-go] -> envio.despachado {"ciudad":"Cali","orden_id":9229,"transportadora":"Servientrega"}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:16.996493450Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=35396c03
+esc3-n2-productor-go     | 2026-10-28T14:32:44.391590536Z [productor-go] -> envio.entregado {"ciudad":"Bucaramanga","orden_id":2968,"transportadora":"Servientrega"}
+esc3-n2-productor-go     | 2026-10-28T14:32:50.395541167Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":5887,"transportadora":"InterRapidisimo"}
+esc3-n2-productor-go     | 2026-10-28T14:32:56.394775772Z [productor-go] -> envio.despachado {"ciudad":"Medellin","orden_id":7853,"transportadora":"Coordinadora"}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:32.316640258Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=13 pagos_ok=6 pagos_fail=3 ventas=6838.44 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:32.998283922Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=13 pagos_ok=7 pagos_fail=3 ventas=8475.52 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:35.317966719Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=14 pagos_ok=7 pagos_fail=3 ventas=8475.52 alertas_stock=2
+esc3-n2-consumidor-node  | 2026-10-28T14:32:17.300953850Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=085a787f
+esc3-n2-consumidor-node  | 2026-10-28T14:32:20.302384175Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=119e6dab
+esc3-n2-consumidor-node  | 2026-10-28T14:32:20.389379395Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=8009a355
+esc3-n2-productor-node   | 2026-10-28T14:34:56.749546488Z [productor-node] -> inventario.actualizado {"producto":"Monitor","bodega":"bodega-centro","stock":10}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:20.996854886Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=a92e5490
+esc3-n2-consumidor-node  | 2026-10-28T14:32:21.624036194Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=51d939fa
+esc3-n2-consumidor-node  | 2026-10-28T14:32:23.305734939Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=6918e2d1
+esc3-n2-productor-go     | 2026-10-28T14:33:02.395453647Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":9010,"transportadora":"InterRapidisimo"}
+esc3-n2-productor-go     | 2026-10-28T14:33:08.396785188Z [productor-go] -> envio.despachado {"ciudad":"Cali","orden_id":3820,"transportadora":"InterRapidisimo"}
+esc3-n2-productor-go     | 2026-10-28T14:33:14.399133948Z [productor-go] -> envio.entregado {"ciudad":"Cali","orden_id":9585,"transportadora":"Envia"}
+esc3-n2-productor-go     | 2026-10-28T14:33:20.402845512Z [productor-go] -> envio.despachado {"ciudad":"Barranquilla","orden_id":1870,"transportadora":"Envia"}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:36.635075394Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=14 pagos_ok=7 pagos_fail=3 ventas=8475.52 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:36.999012823Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=14 pagos_ok=8 pagos_fail=3 ventas=8600.90 alertas_stock=2
+esc3-n2-productor-go     | 2026-10-28T14:33:26.401330682Z [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":1618,"transportadora":"Coordinadora"}
+esc3-n2-productor-go     | 2026-10-28T14:33:32.401972112Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":2775,"transportadora":"Envia"}
+esc3-n2-productor-node   | 2026-10-28T14:35:01.755412969Z [productor-node] -> inventario.actualizado {"producto":"Laptop","bodega":"bodega-sur","stock":40}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:24.995897479Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=4a5f31e3
+esc3-n2-productor-node   | 2026-10-28T14:35:06.760842348Z [productor-node] -> inventario.agotado {"producto":"Mouse","bodega":"bodega-norte","stock":1}
+esc3-n2-productor-node   | 2026-10-28T14:35:11.766620836Z [productor-node] -> inventario.actualizado {"producto":"Webcam","bodega":"bodega-sur","stock":16}
+esc3-n2-productor-node   | 2026-10-28T14:35:16.771647571Z [productor-node] -> inventario.actualizado {"producto":"Mouse","bodega":"bodega-centro","stock":43}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:38.321606730Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=15 pagos_ok=8 pagos_fail=3 ventas=8600.90 alertas_stock=2
+esc3-n2-productor-go     | 2026-10-28T14:33:38.403221093Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":8427,"transportadora":"Envia"}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:41.001022585Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=15 pagos_ok=9 pagos_fail=3 ventas=9363.29 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:41.325354946Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=16 pagos_ok=9 pagos_fail=3 ventas=9363.29 alertas_stock=2
+esc3-n2-productor-go     | 2026-10-28T14:33:44.406791785Z [productor-go] -> envio.despachado {"ciudad":"Medellin","orden_id":5118,"transportadora":"Servientrega"}
+esc3-n2-productor-go     | 2026-10-28T14:33:50.410949310Z [productor-go] -> envio.entregado {"ciudad":"Bucaramanga","orden_id":4060,"transportadora":"Servientrega"}
+esc3-n2-productor-go     | 2026-10-28T14:33:56.409703814Z [productor-go] -> envio.despachado {"ciudad":"Cali","orden_id":5789,"transportadora":"Coordinadora"}
+esc3-n2-productor-node   | 2026-10-28T14:35:21.774289158Z [productor-node] -> inventario.actualizado {"producto":"Monitor","bodega":"bodega-centro","stock":25}
+esc3-n2-productor-node   | 2026-10-28T14:35:26.776009363Z [productor-node] -> inventario.actualizado {"producto":"Monitor","bodega":"bodega-norte","stock":34}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:41.637280284Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=16 pagos_ok=9 pagos_fail=3 ventas=9363.29 alertas_stock=2
+esc3-n2-consumidor-node  | 2026-10-28T14:32:26.309129634Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=1a5f46ad
+esc3-n2-consumidor-node  | 2026-10-28T14:32:26.388155904Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=8a941065
+esc3-n2-consumidor-node  | 2026-10-28T14:32:26.623300037Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=65bdf0a3
+esc3-n2-productor-go     | 2026-10-28T14:34:02.410401095Z [productor-go] -> envio.entregado {"ciudad":"Bogota","orden_id":2573,"transportadora":"Servientrega"}
+esc3-n2-productor-node   | 2026-10-28T14:35:31.782046237Z [productor-node] -> inventario.actualizado {"producto":"Teclado","bodega":"bodega-norte","stock":38}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:28.997803354Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=640475f6
+esc3-n2-consumidor-node  | 2026-10-28T14:32:29.312631419Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=6e04a5ca
+esc3-n2-consumidor-node  | 2026-10-28T14:32:31.629504674Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=ee0868e0
+esc3-n2-consumidor-node  | 2026-10-28T14:32:32.316696461Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=42e17d87
+esc3-n2-consumidor-go    | 2026-10-28T14:32:44.328724019Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=17 pagos_ok=9 pagos_fail=3 ventas=9363.29 alertas_stock=2
+esc3-n2-consumidor-go    | 2026-10-28T14:32:45.002171977Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=17 pagos_ok=10 pagos_fail=3 ventas=10069.78 alertas_stock=2
+esc3-n2-consumidor-node  | 2026-10-28T14:32:32.389451705Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=3191d935
+esc3-n2-consumidor-go    | 2026-10-28T14:32:46.644171344Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=17 pagos_ok=10 pagos_fail=3 ventas=10069.78 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:32:47.330716827Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=18 pagos_ok=10 pagos_fail=3 ventas=10069.78 alertas_stock=3
+esc3-n2-consumidor-node  | 2026-10-28T14:32:32.998435230Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=e36d51ec
+esc3-n2-consumidor-node  | 2026-10-28T14:32:35.318242030Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=18c4e1e2
+esc3-n2-consumidor-node  | 2026-10-28T14:32:36.635401308Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=dc9a426f
+esc3-n2-consumidor-node  | 2026-10-28T14:32:36.999095227Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=6f508583
+esc3-n2-consumidor-node  | 2026-10-28T14:32:38.321776637Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=f1cfe5cd
+esc3-n2-consumidor-node  | 2026-10-28T14:32:38.391209862Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=bd2bf16a
+esc3-n2-consumidor-node  | 2026-10-28T14:32:41.000885879Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=660d21aa
+esc3-n2-consumidor-node  | 2026-10-28T14:32:41.325597556Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c7ebd759
+esc3-n2-consumidor-go    | 2026-10-28T14:32:49.002698651Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=18 pagos_ok=11 pagos_fail=3 ventas=11728.30 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:32:50.333279951Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=19 pagos_ok=11 pagos_fail=3 ventas=11728.30 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:32:51.648625963Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=19 pagos_ok=11 pagos_fail=3 ventas=11728.30 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:32:53.001229996Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=19 pagos_ok=12 pagos_fail=3 ventas=12605.77 alertas_stock=3
+esc3-n2-consumidor-node  | 2026-10-28T14:32:41.637427190Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=a1ee7b7e
+esc3-n2-consumidor-node  | 2026-10-28T14:32:44.329039819Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=4daefa71
+esc3-n2-consumidor-node  | 2026-10-28T14:32:44.394653442Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=a8bf93a4
+esc3-n2-consumidor-node  | 2026-10-28T14:32:45.002300877Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=ec830a50
+esc3-n2-consumidor-node  | 2026-10-28T14:32:46.644261245Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=c123cf09
+esc3-n2-consumidor-node  | 2026-10-28T14:32:47.330923727Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=55b86871
+esc3-n2-consumidor-node  | 2026-10-28T14:32:49.002861751Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=67f0f647
+esc3-n2-productor-go     | 2026-10-28T14:34:08.412225693Z [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":7196,"transportadora":"Envia"}
+esc3-n2-consumidor-node  | 2026-10-28T14:32:50.333503959Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=a29bd903
+esc3-n2-consumidor-node  | 2026-10-28T14:32:50.398831579Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=01cba05e
+esc3-n2-consumidor-node  | 2026-10-28T14:32:51.648663462Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=ad9ecc93
+esc3-n2-consumidor-node  | 2026-10-28T14:32:53.001319595Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=0ad55def
+esc3-n2-consumidor-node  | 2026-10-28T14:32:53.332896464Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=a9fb8da8
+esc3-n2-consumidor-node  | 2026-10-28T14:32:56.335607245Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=193cf4f6
+esc3-n2-consumidor-node  | 2026-10-28T14:32:56.397389438Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=e03a071d
+esc3-n2-consumidor-node  | 2026-10-28T14:32:56.648219462Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=931174f3
+esc3-n2-consumidor-node  | 2026-10-28T14:32:57.002047840Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=a9dfedc3
+esc3-n2-consumidor-node  | 2026-10-28T14:32:59.340445049Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=6046af48
+esc3-n2-consumidor-node  | 2026-10-28T14:33:01.003375372Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=d00d51c2
+esc3-n2-productor-go     | 2026-10-28T14:34:14.414901382Z [productor-go] -> envio.entregado {"ciudad":"Medellin","orden_id":3955,"transportadora":"InterRapidisimo"}
+esc3-n2-consumidor-node  | 2026-10-28T14:33:01.654272868Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=ad11924f
+esc3-n2-consumidor-node  | 2026-10-28T14:33:02.344112358Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=272adfdf
+esc3-n2-consumidor-node  | 2026-10-28T14:33:02.398661096Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=470f623b
+esc3-n2-consumidor-node  | 2026-10-28T14:33:05.003954815Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=71bb5067
+esc3-n2-consumidor-go    | 2026-10-28T14:32:53.332834165Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=20 pagos_ok=12 pagos_fail=3 ventas=12605.77 alertas_stock=3
+esc3-n2-consumidor-node  | 2026-10-28T14:33:05.345766179Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c484b21a
+esc3-n2-consumidor-node  | 2026-10-28T14:33:06.660179838Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=4783894e
+esc3-n2-consumidor-node  | 2026-10-28T14:33:08.349934882Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=aa39fead
+esc3-n2-consumidor-go    | 2026-10-28T14:32:56.335419447Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=21 pagos_ok=12 pagos_fail=3 ventas=12605.77 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:32:56.648171662Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=21 pagos_ok=12 pagos_fail=3 ventas=12605.77 alertas_stock=3
+esc3-n2-productor-go     | 2026-10-28T14:34:20.418268122Z [productor-go] -> envio.entregado {"ciudad":"Barranquilla","orden_id":5101,"transportadora":"Coordinadora"}
+esc3-n2-productor-go     | 2026-10-28T14:34:26.417890230Z [productor-go] -> envio.entregado {"ciudad":"Bogota","orden_id":2623,"transportadora":"Envia"}
+esc3-n2-productor-go     | 2026-10-28T14:34:32.418411311Z [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":7420,"transportadora":"Coordinadora"}
+esc3-n2-productor-go     | 2026-10-28T14:34:38.420064724Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":8109,"transportadora":"Envia"}
+esc3-n2-consumidor-go    | 2026-10-28T14:32:57.001795143Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=21 pagos_ok=13 pagos_fail=3 ventas=13169.63 alertas_stock=3
+esc3-n2-productor-go     | 2026-10-28T14:34:44.423089610Z [productor-go] -> envio.entregado {"ciudad":"Medellin","orden_id":4580,"transportadora":"Coordinadora"}
+esc3-n2-productor-go     | 2026-10-28T14:34:50.426520587Z [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":4553,"transportadora":"Servientrega"}
+esc3-n2-consumidor-node  | 2026-10-28T14:33:08.400600216Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=8849d73b
+esc3-n2-consumidor-node  | 2026-10-28T14:33:09.005851463Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=dda68040
+esc3-n2-productor-go     | 2026-10-28T14:34:56.425898103Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":2154,"transportadora":"Servientrega"}
+esc3-n2-consumidor-node  | 2026-10-28T14:33:11.353313844Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=003b3291
+esc3-n2-consumidor-go    | 2026-10-28T14:32:59.340141778Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=22 pagos_ok=13 pagos_fail=3 ventas=13169.63 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:33:01.003295253Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=22 pagos_ok=14 pagos_fail=3 ventas=15177.08 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:33:01.654145138Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=22 pagos_ok=14 pagos_fail=3 ventas=15177.08 alertas_stock=3
+esc3-n2-productor-go     | 2026-10-28T14:35:02.426305508Z [productor-go] -> envio.despachado {"ciudad":"Medellin","orden_id":9546,"transportadora":"Servientrega"}
+esc3-n2-productor-go     | 2026-10-28T14:35:08.427866463Z [productor-go] -> envio.despachado {"ciudad":"Cali","orden_id":8860,"transportadora":"InterRapidisimo"}
+esc3-n2-productor-go     | 2026-10-28T14:35:14.430836049Z [productor-go] -> envio.despachado {"ciudad":"Bucaramanga","orden_id":8551,"transportadora":"Coordinadora"}
+esc3-n2-consumidor-go    | 2026-10-28T14:33:02.344076950Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=23 pagos_ok=14 pagos_fail=3 ventas=15177.08 alertas_stock=3
+esc3-n2-productor-go     | 2026-10-28T14:35:20.435128032Z [productor-go] -> envio.despachado {"ciudad":"Bogota","orden_id":7092,"transportadora":"Servientrega"}
+esc3-n2-consumidor-go    | 2026-10-28T14:33:05.003909414Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=23 pagos_ok=15 pagos_fail=3 ventas=16650.13 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:33:05.345660375Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=24 pagos_ok=15 pagos_fail=3 ventas=16650.13 alertas_stock=3
+esc3-n2-consumidor-go    | 2026-10-28T14:33:06.659845925Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=24 pagos_ok=15 pagos_fail=3 ventas=16650.13 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:08.349817975Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=25 pagos_ok=15 pagos_fail=3 ventas=16650.13 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:09.005756157Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=25 pagos_ok=15 pagos_fail=4 ventas=16650.13 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:11.353267642Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=26 pagos_ok=15 pagos_fail=4 ventas=16650.13 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:11.665568444Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=0db4cece
+esc3-n2-consumidor-node  | 2026-10-28T14:33:13.007554911Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=ff6cf1b4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:11.665526742Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=26 pagos_ok=15 pagos_fail=4 ventas=16650.13 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:14.357709368Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=2ede8097
+esc3-n2-consumidor-node  | 2026-10-28T14:33:14.402422145Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=ebd1fa90
+esc3-n2-consumidor-node  | 2026-10-28T14:33:16.672060921Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=c275ff5a
+esc3-n2-consumidor-go    | 2026-10-28T14:33:13.007433204Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=26 pagos_ok=16 pagos_fail=4 ventas=18389.55 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:17.008802441Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=6df15722
+esc3-n2-productor-go     | 2026-10-28T14:35:26.433457878Z [productor-go] -> envio.entregado {"ciudad":"Barranquilla","orden_id":1039,"transportadora":"Coordinadora"}
+esc3-n2-productor-go     | 2026-10-28T14:35:32.434205583Z [productor-go] -> envio.despachado {"ciudad":"Medellin","orden_id":3375,"transportadora":"InterRapidisimo"}
+esc3-n2-consumidor-go    | 2026-10-28T14:33:14.357556159Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=27 pagos_ok=16 pagos_fail=4 ventas=18389.55 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:17.362050328Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c8e197a7
+esc3-n2-consumidor-go    | 2026-10-28T14:33:16.672005619Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=27 pagos_ok=16 pagos_fail=4 ventas=18389.55 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:17.008457327Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=27 pagos_ok=16 pagos_fail=5 ventas=18389.55 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:17.362005526Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=28 pagos_ok=16 pagos_fail=5 ventas=18389.55 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:20.363231210Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=29 pagos_ok=16 pagos_fail=5 ventas=18389.55 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:21.008423104Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=29 pagos_ok=17 pagos_fail=5 ventas=20322.35 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:20.363286312Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=fb1063ed
+esc3-n2-consumidor-node  | 2026-10-28T14:33:20.406556962Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=f8c666f3
+esc3-n2-consumidor-go    | 2026-10-28T14:33:21.674866552Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=29 pagos_ok=17 pagos_fail=5 ventas=20322.35 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:23.365991604Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=30 pagos_ok=17 pagos_fail=5 ventas=20322.35 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:21.008622812Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=452bcb7f
+esc3-n2-consumidor-go    | 2026-10-28T14:33:25.007982991Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=30 pagos_ok=18 pagos_fail=5 ventas=21892.24 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:21.674954855Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=0ecb0a8e
+esc3-n2-consumidor-node  | 2026-10-28T14:33:23.365954005Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=d039cd8b
+esc3-n2-consumidor-node  | 2026-10-28T14:33:25.008306285Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=501c814a
+esc3-n2-consumidor-node  | 2026-10-28T14:33:26.368242429Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=398e685c
+esc3-n2-consumidor-node  | 2026-10-28T14:33:26.404137736Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=a86e382c
+esc3-n2-consumidor-node  | 2026-10-28T14:33:26.675794950Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=24e42620
+esc3-n2-consumidor-go    | 2026-10-28T14:33:26.368169330Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=31 pagos_ok=18 pagos_fail=5 ventas=21892.24 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:26.675576254Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=31 pagos_ok=18 pagos_fail=5 ventas=21892.24 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:29.007930019Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=31 pagos_ok=19 pagos_fail=5 ventas=22307.45 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:29.371834857Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=32 pagos_ok=19 pagos_fail=5 ventas=22307.45 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:31.680262334Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=32 pagos_ok=19 pagos_fail=5 ventas=22307.45 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:29.008152828Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=1e352fed
+esc3-n2-consumidor-node  | 2026-10-28T14:33:29.371935861Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c74ed0e9
+esc3-n2-consumidor-go    | 2026-10-28T14:33:32.374923899Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=33 pagos_ok=19 pagos_fail=5 ventas=22307.45 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:33.008944907Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=33 pagos_ok=20 pagos_fail=5 ventas=23583.06 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:35.377439985Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=34 pagos_ok=20 pagos_fail=5 ventas=23583.06 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:36.685509023Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=34 pagos_ok=20 pagos_fail=5 ventas=23583.06 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:37.009046660Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=34 pagos_ok=21 pagos_fail=5 ventas=24892.04 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:31.680536594Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=35892428
+esc3-n2-consumidor-node  | 2026-10-28T14:33:32.375116341Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=558d4d7f
+esc3-n2-consumidor-go    | 2026-10-28T14:33:38.379265898Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=35 pagos_ok=21 pagos_fail=5 ventas=24892.04 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:32.405034782Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=c36c331d
+esc3-n2-consumidor-node  | 2026-10-28T14:33:33.009013022Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=d503ef61
+esc3-n2-consumidor-go    | 2026-10-28T14:33:41.010783955Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=35 pagos_ok=22 pagos_fail=5 ventas=25213.11 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:41.383780724Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=36 pagos_ok=22 pagos_fail=5 ventas=25213.11 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:41.690824884Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=36 pagos_ok=22 pagos_fail=5 ventas=25213.11 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:44.387838474Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=37 pagos_ok=22 pagos_fail=5 ventas=25213.11 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:35.377680897Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=47cc1bf2
+esc3-n2-consumidor-node  | 2026-10-28T14:33:36.685605228Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=e8ae75fa
+esc3-n2-consumidor-go    | 2026-10-28T14:33:45.011276089Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=37 pagos_ok=23 pagos_fail=5 ventas=26665.52 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:46.696623162Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=37 pagos_ok=23 pagos_fail=5 ventas=26665.52 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:47.391265905Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=38 pagos_ok=23 pagos_fail=5 ventas=26665.52 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:49.012736549Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=38 pagos_ok=24 pagos_fail=5 ventas=28510.14 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:50.393535109Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=39 pagos_ok=24 pagos_fail=5 ventas=28510.14 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:51.700004426Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=39 pagos_ok=24 pagos_fail=5 ventas=28510.14 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:37.009124963Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=df957739
+esc3-n2-consumidor-node  | 2026-10-28T14:33:38.379367503Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=7943d888
+esc3-n2-consumidor-go    | 2026-10-28T14:33:53.011928115Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=39 pagos_ok=25 pagos_fail=5 ventas=29887.24 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:38.405832923Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=e8dc8b2c
+esc3-n2-consumidor-go    | 2026-10-28T14:33:53.395060431Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=40 pagos_ok=25 pagos_fail=5 ventas=29887.24 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:41.010858161Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=64ce317d
+esc3-n2-consumidor-go    | 2026-10-28T14:33:56.398215214Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=41 pagos_ok=25 pagos_fail=5 ventas=29887.24 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:56.701618254Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=41 pagos_ok=25 pagos_fail=5 ventas=29887.24 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:33:57.012554187Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=41 pagos_ok=25 pagos_fail=6 ventas=29887.24 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:41.383945837Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=f1342948
+esc3-n2-consumidor-go    | 2026-10-28T14:33:59.403617718Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=42 pagos_ok=25 pagos_fail=6 ventas=29887.24 alertas_stock=4
+esc3-n2-consumidor-node  | 2026-10-28T14:33:41.690965294Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=0890a501
+esc3-n2-consumidor-node  | 2026-10-28T14:33:44.387882078Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=34301e11
+esc3-n2-consumidor-node  | 2026-10-28T14:33:44.409172863Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=6a0f08ec
+esc3-n2-consumidor-node  | 2026-10-28T14:33:45.011371096Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=5b641c46
+esc3-n2-consumidor-node  | 2026-10-28T14:33:46.696677466Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=d313fe70
+esc3-n2-consumidor-node  | 2026-10-28T14:33:47.391332608Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=721b3ea1
+esc3-n2-consumidor-node  | 2026-10-28T14:33:49.012734549Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=9a85b64b
+esc3-n2-consumidor-node  | 2026-10-28T14:33:50.393720717Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=b2723830
+esc3-n2-consumidor-go    | 2026-10-28T14:34:01.013567270Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=42 pagos_ok=26 pagos_fail=6 ventas=31591.93 alertas_stock=4
+esc3-n2-consumidor-go    | 2026-10-28T14:34:01.706638653Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=42 pagos_ok=26 pagos_fail=6 ventas=31591.93 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:02.406252478Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=43 pagos_ok=26 pagos_fail=6 ventas=31591.93 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:05.014865720Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=43 pagos_ok=26 pagos_fail=7 ventas=31591.93 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:05.409013216Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=44 pagos_ok=26 pagos_fail=7 ventas=31591.93 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:06.712411838Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=44 pagos_ok=26 pagos_fail=7 ventas=31591.93 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:08.412284196Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=45 pagos_ok=26 pagos_fail=7 ventas=31591.93 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:09.016628236Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=45 pagos_ok=27 pagos_fail=7 ventas=32643.04 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:11.415746748Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=46 pagos_ok=27 pagos_fail=7 ventas=32643.04 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:33:50.413508313Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=e03ec07c
+esc3-n2-consumidor-go    | 2026-10-28T14:34:11.717185602Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=46 pagos_ok=27 pagos_fail=7 ventas=32643.04 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:13.017219034Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=46 pagos_ok=27 pagos_fail=8 ventas=32643.04 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:33:51.700234835Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=87d0b333
+esc3-n2-consumidor-go    | 2026-10-28T14:34:14.419628564Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=47 pagos_ok=27 pagos_fail=8 ventas=32643.04 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:33:53.012159324Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=f594612b
+esc3-n2-consumidor-node  | 2026-10-28T14:33:53.395241538Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=4a77cf0a
+esc3-n2-consumidor-node  | 2026-10-28T14:33:56.398289118Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=f4e476e3
+esc3-n2-consumidor-go    | 2026-10-28T14:34:16.723676897Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=47 pagos_ok=27 pagos_fail=8 ventas=32643.04 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:33:56.412162242Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=79339167
+esc3-n2-consumidor-go    | 2026-10-28T14:34:17.019232300Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=47 pagos_ok=28 pagos_fail=8 ventas=33144.89 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:33:56.701853866Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=00f24d7f
+esc3-n2-consumidor-node  | 2026-10-28T14:33:57.012581589Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=96da1824
+esc3-n2-consumidor-node  | 2026-10-28T14:33:59.403887232Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=56259bd3
+esc3-n2-consumidor-go    | 2026-10-28T14:34:17.421475658Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=48 pagos_ok=28 pagos_fail=8 ventas=33144.89 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:20.423182859Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=49 pagos_ok=28 pagos_fail=8 ventas=33144.89 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:21.019935765Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=49 pagos_ok=29 pagos_fail=8 ventas=33870.67 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:21.728145056Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=49 pagos_ok=29 pagos_fail=8 ventas=33870.67 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:34:01.013619072Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=29b36a96
+esc3-n2-consumidor-node  | 2026-10-28T14:34:01.706725858Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=11e6557e
+esc3-n2-consumidor-node  | 2026-10-28T14:34:02.406598596Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c7b36a80
+esc3-n2-consumidor-go    | 2026-10-28T14:34:23.426038513Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=50 pagos_ok=29 pagos_fail=8 ventas=33870.67 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:25.018564385Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=50 pagos_ok=30 pagos_fail=8 ventas=35731.23 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:34:02.412398199Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=46e55d00
+esc3-n2-consumidor-go    | 2026-10-28T14:34:26.427748306Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=51 pagos_ok=30 pagos_fail=8 ventas=35731.23 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:26.727836791Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=51 pagos_ok=30 pagos_fail=8 ventas=35731.23 alertas_stock=5
+esc3-n2-consumidor-node  | 2026-10-28T14:34:05.015128236Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=2cde1da8
+esc3-n2-consumidor-go    | 2026-10-28T14:34:29.019237096Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=51 pagos_ok=31 pagos_fail=8 ventas=37662.44 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:29.433936790Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=52 pagos_ok=31 pagos_fail=8 ventas=37662.44 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:31.734144391Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=52 pagos_ok=31 pagos_fail=8 ventas=37662.44 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:32.435628633Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=53 pagos_ok=31 pagos_fail=8 ventas=37662.44 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:33.020908355Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=53 pagos_ok=32 pagos_fail=8 ventas=39109.55 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:35.438068748Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=54 pagos_ok=32 pagos_fail=8 ventas=39109.55 alertas_stock=5
+esc3-n2-consumidor-go    | 2026-10-28T14:34:36.740155521Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=54 pagos_ok=32 pagos_fail=8 ventas=39109.55 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:37.022244522Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=54 pagos_ok=33 pagos_fail=8 ventas=40214.45 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:38.440637469Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=55 pagos_ok=33 pagos_fail=8 ventas=40214.45 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:41.023020004Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=55 pagos_ok=34 pagos_fail=8 ventas=41972.27 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:41.444177345Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=56 pagos_ok=34 pagos_fail=8 ventas=41972.27 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:05.409245530Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=8a152705
+esc3-n2-consumidor-node  | 2026-10-28T14:34:06.712502943Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=591a7b11
+esc3-n2-consumidor-node  | 2026-10-28T14:34:08.412384702Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=528a298a
+esc3-n2-consumidor-go    | 2026-10-28T14:34:41.746592477Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=56 pagos_ok=34 pagos_fail=8 ventas=41972.27 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:44.446902196Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=57 pagos_ok=34 pagos_fail=8 ventas=41972.27 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:45.023335133Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=57 pagos_ok=35 pagos_fail=8 ventas=42921.74 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:46.747673573Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=57 pagos_ok=35 pagos_fail=8 ventas=42921.74 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:47.452683355Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=58 pagos_ok=35 pagos_fail=8 ventas=42921.74 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:08.414734845Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=dd034f49
+esc3-n2-consumidor-node  | 2026-10-28T14:34:09.016729442Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=703b0202
+esc3-n2-consumidor-node  | 2026-10-28T14:34:11.415863955Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=564c9999
+esc3-n2-consumidor-node  | 2026-10-28T14:34:11.717247906Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=77a791f8
+esc3-n2-consumidor-node  | 2026-10-28T14:34:13.017584556Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=de8a07b8
+esc3-n2-consumidor-node  | 2026-10-28T14:34:14.418961524Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=756c0354
+esc3-n2-consumidor-go    | 2026-10-28T14:34:49.024967082Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=58 pagos_ok=36 pagos_fail=8 ventas=43670.37 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:14.419718169Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=35089c8f
+esc3-n2-consumidor-go    | 2026-10-28T14:34:50.453014219Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=59 pagos_ok=36 pagos_fail=8 ventas=43670.37 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:16.723635794Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=7f7eb851
+esc3-n2-consumidor-node  | 2026-10-28T14:34:17.019501916Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=a8757c36
+esc3-n2-consumidor-node  | 2026-10-28T14:34:17.421644969Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=42e6a910
+esc3-n2-consumidor-go    | 2026-10-28T14:34:51.751187926Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=59 pagos_ok=36 pagos_fail=8 ventas=43670.37 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:20.421776992Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=fe0a3e23
+esc3-n2-consumidor-node  | 2026-10-28T14:34:20.423215061Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=0b283ea7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:21.020187877Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=ceada62d
+esc3-n2-consumidor-node  | 2026-10-28T14:34:21.728464471Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=8e220f7b
+esc3-n2-consumidor-go    | 2026-10-28T14:34:53.024207767Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=59 pagos_ok=37 pagos_fail=8 ventas=44234.83 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:53.456202960Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=60 pagos_ok=37 pagos_fail=8 ventas=44234.83 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:56.458506908Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=61 pagos_ok=37 pagos_fail=8 ventas=44234.83 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:56.752811478Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=61 pagos_ok=37 pagos_fail=8 ventas=44234.83 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:34:57.025135839Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=61 pagos_ok=38 pagos_fail=8 ventas=44859.28 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:23.426099316Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=b25f5056
+esc3-n2-consumidor-node  | 2026-10-28T14:34:25.018744693Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=06d46095
+esc3-n2-consumidor-go    | 2026-10-28T14:34:59.463485541Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=62 pagos_ok=38 pagos_fail=8 ventas=44859.28 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:26.420780570Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=e048cbe8
+esc3-n2-consumidor-go    | 2026-10-28T14:35:01.026137753Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=62 pagos_ok=39 pagos_fail=8 ventas=46019.36 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:26.427898713Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=0f9acf72
+esc3-n2-consumidor-go    | 2026-10-28T14:35:01.758468703Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=62 pagos_ok=39 pagos_fail=8 ventas=46019.36 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:35:02.467300551Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=63 pagos_ok=39 pagos_fail=8 ventas=46019.36 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:35:05.027959883Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=63 pagos_ok=40 pagos_fail=8 ventas=46550.57 alertas_stock=6
+esc3-n2-consumidor-go    | 2026-10-28T14:35:05.469633847Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=64 pagos_ok=40 pagos_fail=8 ventas=46550.57 alertas_stock=6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:26.728085903Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=7309f7bd
+esc3-n2-consumidor-node  | 2026-10-28T14:34:29.019439607Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=a0ce274c
+esc3-n2-consumidor-node  | 2026-10-28T14:34:29.434045196Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=7bedbbc0
+esc3-n2-consumidor-node  | 2026-10-28T14:34:31.734310700Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=5f1324f2
+esc3-n2-consumidor-node  | 2026-10-28T14:34:32.422407925Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=9f86023a
+esc3-n2-consumidor-go    | 2026-10-28T14:35:06.764516729Z [consumidor-go@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | ordenes=64 pagos_ok=40 pagos_fail=8 ventas=46550.57 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:08.470965136Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=65 pagos_ok=40 pagos_fail=8 ventas=46550.57 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:32.435674235Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=23b51b44
+esc3-n2-consumidor-node  | 2026-10-28T14:34:33.021109966Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=734caef1
+esc3-n2-consumidor-node  | 2026-10-28T14:34:35.438151252Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=118d2d8e
+esc3-n2-consumidor-go    | 2026-10-28T14:35:09.028368704Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=65 pagos_ok=41 pagos_fail=8 ventas=47525.06 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:36.740312030Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=25278538
+esc3-n2-consumidor-node  | 2026-10-28T14:34:37.022455234Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=a5985acf
+esc3-n2-consumidor-node  | 2026-10-28T14:34:38.423714628Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=fa3287a2
+esc3-n2-consumidor-node  | 2026-10-28T14:34:38.440679172Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=6c892251
+esc3-n2-consumidor-go    | 2026-10-28T14:35:11.475270247Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=66 pagos_ok=41 pagos_fail=8 ventas=47525.06 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:11.772044660Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=66 pagos_ok=41 pagos_fail=8 ventas=47525.06 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:13.028989280Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=66 pagos_ok=42 pagos_fail=8 ventas=49100.65 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:14.479361045Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=67 pagos_ok=42 pagos_fail=8 ventas=49100.65 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:16.775663170Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=67 pagos_ok=42 pagos_fail=8 ventas=49100.65 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:17.030263088Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=67 pagos_ok=43 pagos_fail=8 ventas=50833.13 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:17.483926771Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=68 pagos_ok=43 pagos_fail=8 ventas=50833.13 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:41.023102008Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=de3e2a9c
+esc3-n2-consumidor-node  | 2026-10-28T14:34:41.444269350Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=aaa3e47c
+esc3-n2-consumidor-node  | 2026-10-28T14:34:41.746695283Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=de188c6f
+esc3-n2-consumidor-go    | 2026-10-28T14:35:20.486119059Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=69 pagos_ok=43 pagos_fail=8 ventas=50833.13 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:44.426765509Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=fab1ba17
+esc3-n2-consumidor-node  | 2026-10-28T14:34:44.447219213Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=00127705
+esc3-n2-consumidor-node  | 2026-10-28T14:34:45.023481840Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=04b46ac6
+esc3-n2-consumidor-node  | 2026-10-28T14:34:46.747925187Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=8dd4ae04
+esc3-n2-consumidor-go    | 2026-10-28T14:35:21.031444685Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=69 pagos_ok=44 pagos_fail=8 ventas=51399.11 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:21.778249955Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=69 pagos_ok=44 pagos_fail=8 ventas=51399.11 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:23.487932242Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=70 pagos_ok=44 pagos_fail=8 ventas=51399.11 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:47.452796961Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=9a0d8468
+esc3-n2-consumidor-node  | 2026-10-28T14:34:49.025079188Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=e1b00085
+esc3-n2-consumidor-go    | 2026-10-28T14:35:25.030146730Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=70 pagos_ok=45 pagos_fail=8 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:26.490724559Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=71 pagos_ok=45 pagos_fail=8 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:50.430237688Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=7b7966a2
+esc3-n2-consumidor-node  | 2026-10-28T14:34:50.453244031Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=4f170c28
+esc3-n2-consumidor-go    | 2026-10-28T14:35:26.779378474Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=71 pagos_ok=45 pagos_fail=8 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:29.031884345Z [consumidor-go@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | ordenes=71 pagos_ok=45 pagos_fail=9 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:51.751358631Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=71428692
+esc3-n2-consumidor-node  | 2026-10-28T14:34:53.024386072Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=b99f2d8a
+esc3-n2-consumidor-go    | 2026-10-28T14:35:29.493356505Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=72 pagos_ok=45 pagos_fail=9 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:31.785873386Z [consumidor-go@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | ordenes=72 pagos_ok=45 pagos_fail=9 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-go    | 2026-10-28T14:35:32.497076901Z [consumidor-go@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | ordenes=73 pagos_ok=45 pagos_fail=9 ventas=53237.47 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:53.456307163Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=ce444638
+esc3-n2-consumidor-node  | 2026-10-28T14:34:56.429015489Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=c7259609
+esc3-n2-consumidor-node  | 2026-10-28T14:34:56.458784816Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=6aa09eba
+esc3-n2-consumidor-go    | 2026-10-28T14:35:33.032996473Z [consumidor-go@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | ordenes=73 pagos_ok=46 pagos_fail=9 ventas=55094.52 alertas_stock=7
+esc3-n2-consumidor-node  | 2026-10-28T14:34:56.753028884Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=543124cc
+esc3-n2-consumidor-node  | 2026-10-28T14:34:57.025204040Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=686fa966
+esc3-n2-consumidor-node  | 2026-10-28T14:34:59.463612350Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=c048e12a
+esc3-n2-consumidor-node  | 2026-10-28T14:35:01.026363771Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=352f6284
+esc3-n2-consumidor-node  | 2026-10-28T14:35:01.758559710Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=3853d993
+esc3-n2-consumidor-node  | 2026-10-28T14:35:02.430146302Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=96e3d1b1
+esc3-n2-consumidor-node  | 2026-10-28T14:35:02.467469164Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=5fbcf557
+esc3-n2-consumidor-node  | 2026-10-28T14:35:05.028665537Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=7b3e7a2b
+esc3-n2-consumidor-node  | 2026-10-28T14:35:05.469687451Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=5dfe3e08
+esc3-n2-consumidor-node  | 2026-10-28T14:35:06.764741046Z [consumidor-node@esc3-nodo2] <- inventario.agotado de productor-node@esc3-nodo2 | AUDITORIA id=84e03db9
+esc3-n2-consumidor-node  | 2026-10-28T14:35:08.431441277Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=b1d744eb
+esc3-n2-consumidor-node  | 2026-10-28T14:35:08.471172148Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=faa97c56
+esc3-n2-consumidor-node  | 2026-10-28T14:35:09.028642721Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=c565451e
+esc3-n2-consumidor-node  | 2026-10-28T14:35:11.475346451Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=b9bd5a23
+esc3-n2-consumidor-node  | 2026-10-28T14:35:11.772651996Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=0876a802
+esc3-n2-consumidor-node  | 2026-10-28T14:35:13.029178692Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=bc6c8337
+esc3-n2-consumidor-node  | 2026-10-28T14:35:14.434070642Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=332bf60d
+esc3-n2-consumidor-node  | 2026-10-28T14:35:14.479393647Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=68f0aee4
+esc3-n2-consumidor-node  | 2026-10-28T14:35:16.775743074Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=481558d2
+esc3-n2-consumidor-node  | 2026-10-28T14:35:17.030477898Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=f45aa4c9
+esc3-n2-consumidor-node  | 2026-10-28T14:35:17.483974774Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=24df965a
+esc3-n2-consumidor-node  | 2026-10-28T14:35:20.438405795Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=2c99a85f
+esc3-n2-consumidor-node  | 2026-10-28T14:35:20.486231865Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=5f0ffa9d
+esc3-n2-consumidor-node  | 2026-10-28T14:35:21.031474987Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=2cf68424
+esc3-n2-consumidor-node  | 2026-10-28T14:35:21.778426163Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=69d30d66
+esc3-n2-consumidor-node  | 2026-10-28T14:35:23.488203143Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=e95198aa
+esc3-n2-consumidor-node  | 2026-10-28T14:35:25.030219830Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=dd972438
+esc3-n2-consumidor-node  | 2026-10-28T14:35:26.437191489Z [consumidor-node@esc3-nodo2] <- envio.entregado de productor-go@esc3-nodo2 | AUDITORIA id=d648a8eb
+esc3-n2-consumidor-node  | 2026-10-28T14:35:26.491076960Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=498d4519
+esc3-n2-consumidor-node  | 2026-10-28T14:35:26.779444974Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=0d194225
+esc3-n2-consumidor-node  | 2026-10-28T14:35:29.031929147Z [consumidor-node@esc3-nodo2] <- pago.rechazado de productor-java@esc3-nodo1 | AUDITORIA id=ce0bec12
+esc3-n2-consumidor-node  | 2026-10-28T14:35:29.493458810Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=ed515c9f
+esc3-n2-consumidor-node  | 2026-10-28T14:35:31.785928194Z [consumidor-node@esc3-nodo2] <- inventario.actualizado de productor-node@esc3-nodo2 | AUDITORIA id=132f27f8
+esc3-n2-consumidor-node  | 2026-10-28T14:35:32.438163050Z [consumidor-node@esc3-nodo2] <- envio.despachado de productor-go@esc3-nodo2 | AUDITORIA id=8828d9fa
+esc3-n2-consumidor-node  | 2026-10-28T14:35:32.497134509Z [consumidor-node@esc3-nodo2] <- orden.creada de productor-python@esc3-nodo1 | AUDITORIA id=af8b5f7c
+esc3-n2-consumidor-node  | 2026-10-28T14:35:33.033114490Z [consumidor-node@esc3-nodo2] <- pago.aprobado de productor-java@esc3-nodo1 | AUDITORIA id=6b9ce103

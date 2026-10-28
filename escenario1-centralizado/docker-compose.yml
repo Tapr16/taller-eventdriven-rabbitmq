@@ -1,0 +1,87 @@
+# ESCENARIO 1 - CENTRALIZADO
+# Broker, 4 productores y 4 consumidores en un unico nodo.
+# Se comunican por la red interna de Docker usando el nombre de servicio "rabbitmq".
+#   docker compose up --build
+name: esc1-centralizado
+
+x-rabbit-env: &rabbit-env
+  RABBITMQ_HOST: rabbitmq
+  RABBITMQ_PORT: "5672"
+  RABBITMQ_USER: admin
+  RABBITMQ_PASS: admin123
+  NODO: nodo-unico
+
+x-servicio: &servicio
+  restart: unless-stopped
+  depends_on:
+    rabbitmq:
+      condition: service_healthy
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: esc1-rabbitmq
+    hostname: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin123
+    ports:
+      - "5672:5672"     # AMQP
+      - "15672:15672"   # Panel de administracion
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_port_connectivity"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+
+  # ---------- Productores ----------
+  productor-python:
+    <<: *servicio
+    build: ../productores/python-ordenes
+    container_name: esc1-productor-python
+    environment: *rabbit-env
+
+  productor-java:
+    <<: *servicio
+    build: ../productores/java-pagos
+    container_name: esc1-productor-java
+    environment: *rabbit-env
+
+  productor-node:
+    <<: *servicio
+    build: ../productores/node-inventario
+    container_name: esc1-productor-node
+    environment: *rabbit-env
+
+  productor-go:
+    <<: *servicio
+    build: ../productores/go-envios
+    container_name: esc1-productor-go
+    environment: *rabbit-env
+
+  # ---------- Consumidores ----------
+  consumidor-python:
+    <<: *servicio
+    build: ../consumidores/python-notificaciones
+    container_name: esc1-consumidor-python
+    environment: *rabbit-env
+
+  consumidor-java:
+    <<: *servicio
+    build: ../consumidores/java-facturacion
+    container_name: esc1-consumidor-java
+    environment: *rabbit-env
+
+  consumidor-node:
+    <<: *servicio
+    build: ../consumidores/node-auditoria
+    container_name: esc1-consumidor-node
+    environment: *rabbit-env
+    ports:
+      - "8080:8080"     # UI web de eventos
+
+  consumidor-go:
+    <<: *servicio
+    build: ../consumidores/go-analitica
+    container_name: esc1-consumidor-go
+    environment: *rabbit-env

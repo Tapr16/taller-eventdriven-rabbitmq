@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Logs escenario 1</title><style>body{margin:0;background:#0c0c0c;color:#cccccc;font:12px/1.35 Consolas,monospace;padding:14px}pre{margin:0 0 14px;white-space:pre-wrap}.p{color:#16c60c}.c{color:#f9f1a5}</style></head><body><pre><span class='p'>PS escenario1-centralizado&gt;</span> <span class='c'>docker compose ps</span>
+NAME                     IMAGE                                 STATUS                   PORTS
+esc1-consumidor-go       esc1-centralizado-consumidor-go       Up About a minute        
+esc1-consumidor-java     esc1-centralizado-consumidor-java     Up About a minute        
+esc1-consumidor-node     esc1-centralizado-consumidor-node     Up About a minute        0.0.0.0:8080-&gt;8080/tcp, [::]:8080-&gt;8080/tcp
+esc1-consumidor-python   esc1-centralizado-consumidor-python   Up About a minute        
+esc1-productor-go        esc1-centralizado-productor-go        Up About a minute        
+esc1-productor-java      esc1-centralizado-productor-java      Up About a minute        
+esc1-productor-node      esc1-centralizado-productor-node      Up About a minute        
+esc1-productor-python    esc1-centralizado-productor-python    Up About a minute        
+esc1-rabbitmq            rabbitmq:3-management                 Up 3 minutes (healthy)   0.0.0.0:5672-&gt;5672/tcp, [::]:5672-&gt;5672/tcp, 0.0.0.0:15672-&gt;15672/tcp, [::]:15672-&gt;15672/tcp</pre><pre><span class='p'>PS escenario1-centralizado&gt;</span> <span class='c'>docker compose logs --tail 4 consumidor-python</span>
+[consumidor-python@nodo-unico] &lt;- envio.entregado de productor-go@nodo-unico | SMS: la orden #4162 fue entregada (Envia, Barranquilla)
+[consumidor-python@nodo-unico] &lt;- orden.creada de productor-python@nodo-unico | Correo a carlos: tu orden #3705 (4x Teclado) fue recibida
+[consumidor-python@nodo-unico] &lt;- orden.creada de productor-python@nodo-unico | Correo a luisa: tu orden #3864 (3x Laptop) fue recibida
+[consumidor-python@nodo-unico] &lt;- envio.despachado de productor-go@nodo-unico | SMS: la orden #3766 va en camino (InterRapidisimo, Barranquilla)</pre><pre><span class='p'>PS escenario1-centralizado&gt;</span> <span class='c'>docker compose logs --tail 4 consumidor-java</span>
+[consumidor-java@nodo-unico] &lt;- pago.aprobado de productor-java@nodo-unico | Factura FV-00012 emitida: orden #2777, subtotal 312.04 + IVA 59.29 = 371.33
+[consumidor-java@nodo-unico] &lt;- pago.aprobado de productor-java@nodo-unico | Factura FV-00013 emitida: orden #6819, subtotal 985.85 + IVA 187.31 = 1173.16
+[consumidor-java@nodo-unico] &lt;- pago.rechazado de productor-java@nodo-unico | Orden #7264 anulada: pago rechazado (efectivo)
+[consumidor-java@nodo-unico] &lt;- pago.aprobado de productor-java@nodo-unico | Factura FV-00014 emitida: orden #9886, subtotal 1051.53 + IVA 199.79 = 1251.32</pre><pre><span class='p'>PS escenario1-centralizado&gt;</span> <span class='c'>docker compose logs --tail 4 consumidor-node</span>
+[consumidor-node@nodo-unico] &lt;- inventario.actualizado de productor-node@nodo-unico | AUDITORIA id=8d7fba8d
+[consumidor-node@nodo-unico] &lt;- orden.creada de productor-python@nodo-unico | AUDITORIA id=b9057dd7
+[consumidor-node@nodo-unico] &lt;- pago.aprobado de productor-java@nodo-unico | AUDITORIA id=030166c7
+[consumidor-node@nodo-unico] &lt;- envio.despachado de productor-go@nodo-unico | AUDITORIA id=ea669415</pre><pre><span class='p'>PS escenario1-centralizado&gt;</span> <span class='c'>docker compose logs --tail 4 consumidor-go</span>
+[consumidor-go@nodo-unico] &lt;- inventario.actualizado de productor-node@nodo-unico | ordenes=25 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] &lt;- orden.creada de productor-python@nodo-unico | ordenes=26 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] &lt;- pago.aprobado de productor-java@nodo-unico | ordenes=26 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2
+[consumidor-go@nodo-unico] &lt;- orden.creada de productor-python@nodo-unico | ordenes=27 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2</pre></body></html>

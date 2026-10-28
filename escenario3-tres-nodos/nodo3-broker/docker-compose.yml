@@ -1,0 +1,22 @@
+# ESCENARIO 3 - NODO 3: broker RabbitMQ
+# Ejecutar en el PC que hara de broker. Expone AMQP (5672) y el panel (15672) a la red local.
+#   docker compose up -d
+name: esc3-nodo3-broker
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: esc3-rabbitmq
+    hostname: rabbitmq-esc3
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin123
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_port_connectivity"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+    restart: unless-stopped

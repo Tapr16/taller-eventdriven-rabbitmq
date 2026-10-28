@@ -1,0 +1,42 @@
+# ESCENARIO 3 - NODO 2: segundo conjunto (Node.js + Go)
+#   productores: inventario (Node.js), envios (Go)
+#   consumidores: auditoria + UI web (Node.js), analitica (Go)
+# El broker vive en el Nodo 3. Su IP se configura en el archivo .env (BROKER_IP).
+#   docker compose up --build
+name: esc3-nodo2
+
+x-rabbit-env: &rabbit-env
+  RABBITMQ_HOST: ${BROKER_IP:-host.docker.internal}
+  RABBITMQ_PORT: ${BROKER_PORT:-5672}
+  RABBITMQ_USER: ${RABBITMQ_USER:-admin}
+  RABBITMQ_PASS: ${RABBITMQ_PASS:-admin123}
+  NODO: esc3-nodo2
+
+x-servicio: &servicio
+  restart: unless-stopped
+  environment: *rabbit-env
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+services:
+  productor-node:
+    <<: *servicio
+    build: ../../productores/node-inventario
+    container_name: esc3-n2-productor-node
+
+  productor-go:
+    <<: *servicio
+    build: ../../productores/go-envios
+    container_name: esc3-n2-productor-go
+
+  consumidor-node:
+    <<: *servicio
+    build: ../../consumidores/node-auditoria
+    container_name: esc3-n2-consumidor-node
+    ports:
+      - "8080:8080"
+
+  consumidor-go:
+    <<: *servicio
+    build: ../../consumidores/go-analitica
+    container_name: esc3-n2-consumidor-go

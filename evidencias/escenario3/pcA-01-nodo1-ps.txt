@@ -1,0 +1,5 @@
+﻿NAME                        STATUS
+esc3-n1-consumidor-java     Up 5 minutes
+esc3-n1-consumidor-python   Up 5 minutes
+esc3-n1-productor-java      Up 5 minutes
+esc3-n1-productor-python    Up 5 minutes

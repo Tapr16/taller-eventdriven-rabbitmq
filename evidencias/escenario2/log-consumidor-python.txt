@@ -1,0 +1,293 @@
+﻿esc2-consumidor-python  | 2026-10-28T14:14:33.649646822Z [consumidor-python] Escuchando 'q.notificaciones' con bindings ['orden.creada', 'envio.*']
+esc2-consumidor-python  | 2026-10-28T14:14:34.466274916Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #9508 fue entregada (Envia, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:14:36.464074824Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #1549 (2x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:39.467074078Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4575 (4x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:40.467394859Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #8829 va en camino (Servientrega, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:14:42.471811235Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2422 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:45.474867999Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8673 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:46.467518318Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2612 fue entregada (Envia, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:14:48.474390202Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #5512 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:51.478581426Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #1178 (2x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:52.470026083Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #6446 fue entregada (InterRapidisimo, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:14:54.482291084Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #6382 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:57.487134688Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1640 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:14:58.473972622Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1630 va en camino (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:00.490525443Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #3603 (5x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:03.492643804Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #4205 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:04.474128735Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #9757 va en camino (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:06.496231841Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #9366 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:09.498193008Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #6342 (4x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:10.476084827Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5397 va en camino (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:12.501642048Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #4333 (2x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:15.504781732Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #9710 (1x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:16.475415246Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5387 va en camino (InterRapidisimo, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:15:18.505224572Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #2007 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:21.504867631Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #2961 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:22.478248092Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #8674 va en camino (Envia, Cali)
+esc2-consumidor-python  | 2026-10-28T14:15:24.509149758Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #6874 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:27.513332971Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #3009 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:28.483200370Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #5061 fue entregada (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:30.516484191Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #4945 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:33.517921528Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #4842 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:34.482860274Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7178 fue entregada (InterRapidisimo, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:36.521280858Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #5939 (4x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:39.525463764Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #7095 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:40.484178437Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #9487 fue entregada (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:42.529382901Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #8023 (4x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:45.531938166Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #5554 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:46.484857295Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #9323 va en camino (Envia, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:15:48.532358131Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #7878 (5x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:51.536876483Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #6973 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:52.487219879Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3633 va en camino (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:15:54.540725089Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1933 (2x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:57.541936861Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #1520 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:15:58.491731357Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #4833 fue entregada (Coordinadora, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:16:00.545079751Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2726 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:03.546232795Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #9176 (5x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:04.492396057Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1276 va en camino (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:16:06.549285563Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4218 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:09.553708101Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #3664 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:10.492915931Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3960 va en camino (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:16:12.558311493Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #3058 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:15.561073963Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #5375 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:16.492953976Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7573 fue entregada (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:16:18.561466004Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #9144 (2x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:21.563627836Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #2529 (5x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:22.495686276Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #1751 fue entregada (Envia, Cali)
+esc2-consumidor-python  | 2026-10-28T14:16:24.567887463Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #8565 (2x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:27.571677747Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #7499 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:28.499147141Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5966 va en camino (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:16:30.572968575Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #2103 (5x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:33.573568968Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8399 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:34.499620781Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #5195 fue entregada (Servientrega, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:16:36.577572259Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #1674 (2x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:39.580685389Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #6210 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:40.501602023Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2976 fue entregada (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:16:42.585720516Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #3909 (2x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:45.588546554Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #1814 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:46.500999343Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #6343 va en camino (InterRapidisimo, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:16:48.589907177Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #5752 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:51.593079911Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #4177 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:52.504150146Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #9618 fue entregada (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:16:54.595711397Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #1428 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:57.600227674Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4717 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:16:58.509839658Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #2529 va en camino (Servientrega, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:17:00.603741317Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8793 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:03.604705393Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #7151 (2x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:04.508261315Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3485 va en camino (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:17:06.608512395Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #5063 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:09.612755292Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #6581 (1x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:10.509350935Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7020 fue entregada (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:17:12.616637471Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #4213 (1x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:15.620428432Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1887 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:16.509713943Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #9196 fue entregada (Servientrega, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:17:18.620209782Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8138 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:21.624787196Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #3128 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:22.512359201Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5037 va en camino (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:17:24.624366584Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #4714 (2x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:27.629089554Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #9602 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:28.516351783Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #8938 va en camino (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:17:30.631818774Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #8044 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:33.633420035Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #4890 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:34.516459457Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #5865 fue entregada (InterRapidisimo, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:17:36.637581119Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #7943 (4x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:39.641541925Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #2570 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:40.518414845Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #9902 va en camino (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:17:42.644964789Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2706 (2x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:45.649185092Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #3676 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:46.518544853Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #9588 va en camino (Envia, Cali)
+esc2-consumidor-python  | 2026-10-28T14:17:48.648224531Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #8737 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:51.652465555Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4899 (4x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:52.521568539Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #8662 va en camino (Envia, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:17:54.656657795Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #4418 (1x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:57.660133674Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #8017 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:17:58.524898877Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2341 fue entregada (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:18:00.664517710Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #8256 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:03.664098344Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #7859 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:04.525828966Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #6169 va en camino (Servientrega, Cali)
+esc2-consumidor-python  | 2026-10-28T14:18:06.668556562Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #8123 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:09.671960920Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #4019 (4x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:10.527262821Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7503 fue entregada (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:18:12.676750446Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #3499 (5x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:15.679657585Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #9191 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:16.527330030Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #3746 fue entregada (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:18:18.679579388Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #8632 (1x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:21.683722944Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #6508 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:22.530084169Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1458 va en camino (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:18:24.685378378Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #3563 (1x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:27.689101253Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #6140 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:28.534721971Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #2599 va en camino (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:18:30.694042017Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #3929 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:33.694874967Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #5302 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:34.535191063Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #3561 fue entregada (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:18:36.698298009Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4137 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:39.700545670Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #8403 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:40.536344111Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #3641 fue entregada (Servientrega, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:18:42.704763293Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #3722 (1x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:45.709091365Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #4297 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:46.536843536Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #7588 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:18:48.708384876Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #9650 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:51.712767206Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #9147 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:52.540231733Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #2879 va en camino (Servientrega, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:18:54.716053503Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #6850 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:57.720059736Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #9391 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:18:58.543963120Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #1743 fue entregada (InterRapidisimo, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:19:00.723561779Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #7241 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:03.726145172Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #7319 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:04.545032188Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #6589 fue entregada (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:19:06.729923808Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #9987 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:09.733606973Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #8284 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:10.545677652Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1127 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:19:12.737984373Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #3965 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:15.740300358Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1089 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:16.546528282Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2687 fue entregada (Servientrega, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:19:18.741047364Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #7274 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:21.745066842Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2937 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:22.549220498Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #6358 va en camino (InterRapidisimo, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:19:24.749221452Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #1395 (2x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:27.751030541Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #1116 (2x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:28.552705670Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #6991 va en camino (Coordinadora, Cali)
+esc2-consumidor-python  | 2026-10-28T14:19:30.755127808Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #8870 (2x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:33.756132869Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2206 (4x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:34.553802382Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7391 fue entregada (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:19:36.760083177Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1684 (4x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:39.762898814Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #5610 (5x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:40.554846282Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3596 va en camino (Servientrega, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:19:42.767866290Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #4071 (2x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:45.770694359Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #5875 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:46.555394674Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #2376 va en camino (InterRapidisimo, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:19:48.771916182Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #8923 (5x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:51.773479682Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #4912 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:52.558615078Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #1986 fue entregada (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:19:54.777346501Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #1781 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:57.781043301Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #9863 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:19:58.562079458Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #2229 va en camino (Servientrega, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:20:00.785248131Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #1711 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:03.785919973Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #9987 (2x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:04.561454524Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #1119 fue entregada (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:20:06.788590896Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #7408 (5x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:09.792455586Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #5941 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:10.563131469Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3973 va en camino (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:20:12.797334262Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #9319 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:15.801491229Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #8310 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:16.563358956Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2756 fue entregada (Coordinadora, Cali)
+esc2-consumidor-python  | 2026-10-28T14:20:18.801819565Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8379 (5x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:21.805274558Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #7359 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:22.565889318Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4179 va en camino (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:20:24.807173973Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #7338 (5x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:27.812136252Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #3545 (1x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:28.570519789Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1529 va en camino (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:20:30.816087808Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #3307 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:33.817195821Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #8303 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:34.571351545Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #5345 fue entregada (Servientrega, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:20:36.820910189Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #7489 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:39.825030035Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #4451 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:40.571656750Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1318 va en camino (Envia, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:20:42.828687108Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #5002 (1x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:45.832661325Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #9941 (4x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:46.571635112Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7216 fue entregada (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:20:48.833479312Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8913 (4x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:51.836895896Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #7539 (2x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:52.574780492Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5233 va en camino (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:20:54.840963584Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #8450 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:57.843942818Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #4432 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:20:58.578736060Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3888 va en camino (Servientrega, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:21:00.847529480Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #2087 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:03.848487910Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #3851 (5x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:04.579765618Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #9454 fue entregada (InterRapidisimo, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:21:06.853058662Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #9117 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:09.857494824Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #6895 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:10.580687358Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4314 va en camino (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:21:12.861384659Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #5510 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:15.865568972Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #3717 (1x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:16.581551646Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #1036 fue entregada (InterRapidisimo, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:21:18.865340214Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #7642 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:21.869110911Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1992 (4x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:22.584071190Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #1512 fue entregada (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:21:24.872942102Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #1298 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:27.877236285Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #9398 (2x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:28.587924586Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #3490 fue entregada (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:21:30.880657066Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4161 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:33.881822273Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #8739 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:34.589066294Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5279 va en camino (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:21:36.886154939Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #4781 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:39.889328476Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #3319 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:40.589684672Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #8171 va en camino (InterRapidisimo, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:21:42.894584584Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #3004 (5x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:45.895960217Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #8205 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:46.589889315Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4549 va en camino (Servientrega, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:21:48.895279960Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #8508 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:51.899765313Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #9669 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:52.593114610Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2684 fue entregada (Servientrega, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:21:54.902569479Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2261 (1x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:57.907383707Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4340 (4x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:21:58.596835586Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #6286 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:22:00.912545057Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #7268 (4x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:03.913789252Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #9479 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:04.598373769Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5050 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:22:06.916877261Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #5542 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:09.919659354Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #3600 (2x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:10.599681838Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #4116 fue entregada (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:22:12.922906523Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #5804 (2x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:15.926002068Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #2241 (1x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:16.600203493Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #6549 va en camino (Servientrega, Cali)
+esc2-consumidor-python  | 2026-10-28T14:22:18.926332844Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #1952 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:21.930379945Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #2260 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:22.607168028Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1148 va en camino (Servientrega, Cali)
+esc2-consumidor-python  | 2026-10-28T14:22:24.934270339Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1454 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:27.938749987Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #9654 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:28.606860471Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7821 fue entregada (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:22:30.941482276Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4131 (1x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:33.942483480Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #5942 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:34.607888929Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #9579 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:22:36.947571527Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #6655 (1x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:39.950148735Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #2480 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:40.608284777Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #8784 fue entregada (Coordinadora, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:22:42.954677321Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #8133 (5x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:45.958448965Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #8622 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:46.608830528Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #5609 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:22:48.958856823Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #5742 (4x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:51.962152803Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #2531 (1x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:52.610853397Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1708 va en camino (Envia, Barranquilla)
+esc2-consumidor-python  | 2026-10-28T14:22:54.966437309Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #8083 (5x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:57.970124586Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #9006 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:22:58.614958595Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #3751 fue entregada (InterRapidisimo, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:23:00.973932732Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #2021 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:03.975707695Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #2180 (3x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:04.615977848Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #8054 va en camino (Servientrega, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:23:06.979599466Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #3799 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:09.981444810Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #2291 (5x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:10.617844550Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4445 va en camino (Envia, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:23:12.984439211Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #2164 (5x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:15.988037636Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #2742 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:16.617698668Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #9101 fue entregada (Servientrega, Cali)
+esc2-consumidor-python  | 2026-10-28T14:23:18.988093294Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #1846 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:21.991702934Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #5159 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:22.628864341Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1115 va en camino (Servientrega, Cali)
+esc2-consumidor-python  | 2026-10-28T14:23:24.996445085Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #1257 (2x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:27.999260318Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #4883 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:28.623861297Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #1361 va en camino (Coordinadora, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:23:31.003314012Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #2251 (3x Laptop) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:34.005375622Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #9729 (2x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:34.624877481Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #3970 va en camino (Envia, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:23:37.008818602Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #7975 (2x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:40.012894383Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #8487 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:40.625775759Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #8885 fue entregada (Envia, Bogota)
+esc2-consumidor-python  | 2026-10-28T14:23:43.015672017Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #2344 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:46.020256641Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a sofia: tu orden #4796 (1x Webcam) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:46.626642405Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4257 va en camino (InterRapidisimo, Cali)
+esc2-consumidor-python  | 2026-10-28T14:23:49.025791809Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #1838 (2x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:52.023175669Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4349 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:52.629876056Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4926 va en camino (Servientrega, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:23:55.026809550Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #8931 (3x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:58.031368388Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a carlos: tu orden #8866 (3x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:23:58.633476142Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #7835 fue entregada (Coordinadora, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:24:01.033585324Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #5072 (1x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:24:04.040671814Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a pedro: tu orden #3032 (1x Monitor) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:24:04.634765539Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2164 fue entregada (Envia, Bucaramanga)
+esc2-consumidor-python  | 2026-10-28T14:24:07.037858467Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a luisa: tu orden #3893 (2x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:24:10.041751454Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a ana: tu orden #1925 (3x Teclado) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:24:10.635994687Z [consumidor-python@esc2-nodo1] <- envio.entregado de productor-go@esc2-nodo1 | SMS: la orden #2120 fue entregada (Servientrega, Medellin)
+esc2-consumidor-python  | 2026-10-28T14:24:13.045949490Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #8723 (4x Mouse) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:24:16.049216605Z [consumidor-python@esc2-nodo1] <- orden.creada de productor-python@esc2-nodo1 | Correo a juan: tu orden #4246 (3x Audifonos) fue recibida
+esc2-consumidor-python  | 2026-10-28T14:24:16.634980328Z [consumidor-python@esc2-nodo1] <- envio.despachado de productor-go@esc2-nodo1 | SMS: la orden #4918 va en camino (Servientrega, Cali)

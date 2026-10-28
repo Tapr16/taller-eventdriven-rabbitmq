@@ -1,0 +1,30 @@
+﻿[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00047 emitida: orden #1621, subtotal 1898.31 + IVA 360.68 = 2258.99
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #9550 anulada: pago rechazado (tarjeta)
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #2133 anulada: pago rechazado (pse)
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00048 emitida: orden #5847, subtotal 1418.89 + IVA 269.59 = 1688.48
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00049 emitida: orden #4585, subtotal 96.19 + IVA 18.28 = 114.47
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #6693 anulada: pago rechazado (nequi)
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00050 emitida: orden #4931, subtotal 397.55 + IVA 75.53 = 473.08
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00051 emitida: orden #9716, subtotal 299.02 + IVA 56.81 = 355.83
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00052 emitida: orden #9045, subtotal 802.98 + IVA 152.57 = 955.55
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #8620 anulada: pago rechazado (pse)
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #5106 anulada: pago rechazado (efectivo)
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00053 emitida: orden #1322, subtotal 636.95 + IVA 121.02 = 757.97
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00054 emitida: orden #6858, subtotal 181.22 + IVA 34.43 = 215.65
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00055 emitida: orden #6957, subtotal 335.70 + IVA 63.78 = 399.48
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00056 emitida: orden #1668, subtotal 977.22 + IVA 185.67 = 1162.89
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00057 emitida: orden #2702, subtotal 852.15 + IVA 161.91 = 1014.06
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #2354 anulada: pago rechazado (nequi)
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #4944 anulada: pago rechazado (nequi)
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00058 emitida: orden #7891, subtotal 1541.28 + IVA 292.84 = 1834.12
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00059 emitida: orden #2041, subtotal 1151.44 + IVA 218.77 = 1370.21
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00060 emitida: orden #5718, subtotal 682.88 + IVA 129.75 = 812.63
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00061 emitida: orden #4138, subtotal 1633.47 + IVA 310.36 = 1943.83
+[consumidor-java@esc3-nodo1] <- pago.rechazado de productor-java@esc3-nodo1 | Orden #6139 anulada: pago rechazado (nequi)
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00062 emitida: orden #2036, subtotal 1637.08 + IVA 311.05 = 1948.13
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00063 emitida: orden #5445, subtotal 125.38 + IVA 23.82 = 149.20
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00064 emitida: orden #1692, subtotal 762.39 + IVA 144.85 = 907.24
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00065 emitida: orden #2047, subtotal 706.49 + IVA 134.23 = 840.72
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00066 emitida: orden #8276, subtotal 1658.52 + IVA 315.12 = 1973.64
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00067 emitida: orden #1728, subtotal 877.47 + IVA 166.72 = 1044.19
+[consumidor-java@esc3-nodo1] <- pago.aprobado de productor-java@esc3-nodo1 | Factura FV-00068 emitida: orden #2731, subtotal 563.86 + IVA 107.13 = 670.99

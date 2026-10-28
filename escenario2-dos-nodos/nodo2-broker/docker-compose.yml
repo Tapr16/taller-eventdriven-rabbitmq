@@ -1,0 +1,23 @@
+# ESCENARIO 2 - NODO 2: broker RabbitMQ
+# Ejecutar en el PC que hara de broker. Expone AMQP (5672) y el panel (15672) a la red local.
+#   docker compose up -d
+name: esc2-nodo2-broker
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: esc2-rabbitmq
+    hostname: rabbitmq-esc2
+    environment:
+      # El usuario "guest" solo funciona desde localhost; por eso se crea uno propio
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin123
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_port_connectivity"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+    restart: unless-stopped

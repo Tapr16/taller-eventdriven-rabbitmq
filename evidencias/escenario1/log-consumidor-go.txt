@@ -1,0 +1,12 @@
+﻿[consumidor-go@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | ordenes=22 pagos_ok=11 pagos_fail=4 ventas=13401.90 alertas_stock=2
+[consumidor-go@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | ordenes=22 pagos_ok=12 pagos_fail=4 ventas=13713.94 alertas_stock=2
+[consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=23 pagos_ok=12 pagos_fail=4 ventas=13713.94 alertas_stock=2
+[consumidor-go@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | ordenes=23 pagos_ok=13 pagos_fail=4 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | ordenes=23 pagos_ok=13 pagos_fail=4 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=24 pagos_ok=13 pagos_fail=4 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- pago.rechazado de productor-java@nodo-unico | ordenes=24 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=25 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- inventario.actualizado de productor-node@nodo-unico | ordenes=25 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=26 pagos_ok=13 pagos_fail=5 ventas=14699.79 alertas_stock=2
+[consumidor-go@nodo-unico] <- pago.aprobado de productor-java@nodo-unico | ordenes=26 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2
+[consumidor-go@nodo-unico] <- orden.creada de productor-python@nodo-unico | ordenes=27 pagos_ok=14 pagos_fail=5 ventas=15751.32 alertas_stock=2

@@ -1,0 +1,8 @@
+# Dependencias y artefactos de build
+node_modules/
+__pycache__/
+target/
+*.pyc
+
+# Archivos temporales de Office
+~$*

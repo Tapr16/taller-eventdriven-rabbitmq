@@ -1,0 +1,30 @@
+﻿[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a carlos: tu orden #1395 (1x Webcam) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a luisa: tu orden #1535 (4x Laptop) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.entregado de productor-go@esc3-nodo2 | SMS: la orden #9218 fue entregada (Coordinadora, Cali)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a pedro: tu orden #3083 (4x Mouse) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a sofia: tu orden #6861 (3x Teclado) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.despachado de productor-go@esc3-nodo2 | SMS: la orden #1485 va en camino (Servientrega, Medellin)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a juan: tu orden #7964 (1x Audifonos) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a juan: tu orden #7339 (3x Monitor) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.despachado de productor-go@esc3-nodo2 | SMS: la orden #8775 va en camino (Servientrega, Bogota)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a luisa: tu orden #2057 (2x Mouse) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a pedro: tu orden #2836 (5x Monitor) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.entregado de productor-go@esc3-nodo2 | SMS: la orden #8262 fue entregada (InterRapidisimo, Barranquilla)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a luisa: tu orden #9533 (3x Monitor) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a luisa: tu orden #5938 (3x Laptop) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.entregado de productor-go@esc3-nodo2 | SMS: la orden #9202 fue entregada (Envia, Medellin)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a sofia: tu orden #3992 (3x Mouse) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a juan: tu orden #4453 (1x Mouse) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.despachado de productor-go@esc3-nodo2 | SMS: la orden #8232 va en camino (Servientrega, Barranquilla)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a ana: tu orden #3899 (4x Teclado) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a carlos: tu orden #5211 (5x Mouse) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.despachado de productor-go@esc3-nodo2 | SMS: la orden #9229 va en camino (Servientrega, Cali)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a ana: tu orden #3101 (5x Webcam) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a ana: tu orden #5977 (3x Audifonos) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.entregado de productor-go@esc3-nodo2 | SMS: la orden #2968 fue entregada (Servientrega, Bucaramanga)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a luisa: tu orden #1958 (3x Webcam) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a juan: tu orden #4397 (3x Monitor) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.despachado de productor-go@esc3-nodo2 | SMS: la orden #5887 va en camino (InterRapidisimo, Bucaramanga)
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a ana: tu orden #9172 (3x Audifonos) fue recibida
+[consumidor-python@esc3-nodo1] <- orden.creada de productor-python@esc3-nodo1 | Correo a ana: tu orden #6723 (5x Webcam) fue recibida
+[consumidor-python@esc3-nodo1] <- envio.despachado de productor-go@esc3-nodo2 | SMS: la orden #7853 va en camino (Coordinadora, Medellin)

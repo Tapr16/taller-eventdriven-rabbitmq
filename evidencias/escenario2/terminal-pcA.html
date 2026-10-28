@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Escenario 2 PC A</title><style>body{margin:0;background:#0c0c0c;color:#ccc;font:12px/1.35 Consolas,monospace;padding:14px}pre{margin:0 0 14px;white-space:pre-wrap}.p{color:#16c60c}.c{color:#f9f1a5}</style></head><body><pre><span class='p'>PS PC-A (10.6.62.18)&gt;</span> <span class='c'>docker ps</span>
+NAMES           IMAGE                   STATUS
+esc2-rabbitmq   rabbitmq:3-management   Up 7 minutes (healthy)</pre><pre><span class='p'>PS PC-A (10.6.62.18)&gt;</span> <span class='c'>Get-NetTCPConnection -LocalPort 5672 -State Established</span>
+LocalAddress LocalPort RemoteAddress RemotePort       State Proceso           
+------------ --------- ------------- ----------       ----- -------           
+10.6.62.18        5672 10.6.62.137        56210 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56224 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56222 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56221 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56219 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56213 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56212 Established com.docker.backend
+10.6.62.18        5672 10.6.62.137        56209 Established com.docker.backend</pre></body></html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitor de eventos</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --text:#1d2330; --muted:#6b7280; --line:#e5e7eb;
+          --orden:#2563eb; --pago:#16a34a; --inventario:#d97706; --envio:#7c3aed; --malo:#dc2626; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111418; --card:#1a1f26; --text:#e6e8eb; --muted:#9aa3ad; --line:#2a313a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.45 system-ui, sans-serif; background:var(--bg); color:var(--text); }
+  header { padding:20px 24px 8px; }
+  h1 { margin:0; font-size:20px; }
+  header p { margin:4px 0 0; color:var(--muted); }
+  .stats { display:flex; flex-wrap:wrap; gap:10px; padding:12px 24px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 14px; min-width:150px; }
+  .stat b { display:block; font-size:22px; font-variant-numeric:tabular-nums; }
+  .stat span { color:var(--muted); font-size:12px; }
+  table { width:calc(100% - 48px); margin:8px 24px 24px; border-collapse:collapse; background:var(--card);
+          border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  th, td { text-align:left; padding:8px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-size:12px; color:var(--muted); font-weight:600; }
+  td.datos { font-family:ui-monospace, monospace; font-size:12px; color:var(--muted); }
+  .tag { display:inline-block; padding:2px 8px; border-radius:99px; color:#fff; font-size:12px; font-weight:600; }
+  .orden { background:var(--orden); } .pago { background:var(--pago); }
+  .inventario { background:var(--inventario); } .envio { background:var(--envio); }
+  .rechazado, .agotado { background:var(--malo); }
+  @media (max-width: 700px) { td.datos, th.datos { display:none; } table { width:calc(100% - 32px); margin:8px 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Monitor de eventos &mdash; tienda.eventos</h1>
+  <p>Consumidor de auditor&iacute;a (Node.js) suscrito con binding <code>#</code>. Se actualiza en vivo.</p>
+</header>
+<div class="stats" id="stats"></div>
+<table>
+  <thead><tr><th>Hora</th><th>Evento</th><th>Productor</th><th>Nodo origen</th><th class="datos">Datos</th></tr></thead>
+  <tbody id="filas"></tbody>
+</table>
+<script>
+  const filas = document.getElementById('filas');
+  const statsEl = document.getElementById('stats');
+  const conteo = {};
+  let total = 0;
+
+  function claseDe(tipo) {
+    const [dom, accion] = tipo.split('.');
+    return dom + (accion === 'rechazado' || accion === 'agotado' ? ' ' + accion : '');
+  }
+
+  function pintarStats() {
+    let html = `<div class="stat"><b>${total}</b><span>eventos totales</span></div>`;
+    for (const [tipo, n] of Object.entries(conteo).sort()) {
+      html += `<div class="stat"><b>${n}</b><span>${tipo}</span></div>`;
+    }
+    statsEl.innerHTML = html;
+  }
+
+  const fuente = new EventSource('/eventos');
+  fuente.onmessage = (e) => {
+    const ev = JSON.parse(e.data);
+    total++;
+    conteo[ev.tipo] = (conteo[ev.tipo] || 0) + 1;
+    const tr = document.createElement('tr');
+    const hora = new Date(ev.timestamp).toLocaleTimeString();
+    tr.innerHTML = `<td>${hora}</td><td><span class="tag ${claseDe(ev.tipo)}">${ev.tipo}</span></td>
+      <td>${ev.origen} <small>(${ev.lenguaje})</small></td><td>${ev.nodo}</td>
+      <td class="datos"></td>`;
+    tr.querySelector('.datos').textContent = JSON.stringify(ev.datos);
+    filas.prepend(tr);
+    while (filas.children.length > 100) filas.lastChild.remove();
+    pintarStats();
+  };
+</script>
+</body>
+</html>

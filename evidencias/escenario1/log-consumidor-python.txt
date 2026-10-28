@@ -1,0 +1,12 @@
+﻿[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a ana: tu orden #8951 (1x Monitor) fue recibida
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a pedro: tu orden #7352 (5x Audifonos) fue recibida
+[consumidor-python@nodo-unico] <- envio.despachado de productor-go@nodo-unico | SMS: la orden #2395 va en camino (Servientrega, Bogota)
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a pedro: tu orden #6343 (2x Webcam) fue recibida
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a pedro: tu orden #8716 (2x Teclado) fue recibida
+[consumidor-python@nodo-unico] <- envio.despachado de productor-go@nodo-unico | SMS: la orden #2239 va en camino (Coordinadora, Barranquilla)
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a juan: tu orden #7328 (5x Monitor) fue recibida
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a luisa: tu orden #4863 (2x Audifonos) fue recibida
+[consumidor-python@nodo-unico] <- envio.entregado de productor-go@nodo-unico | SMS: la orden #4162 fue entregada (Envia, Barranquilla)
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a carlos: tu orden #3705 (4x Teclado) fue recibida
+[consumidor-python@nodo-unico] <- orden.creada de productor-python@nodo-unico | Correo a luisa: tu orden #3864 (3x Laptop) fue recibida
+[consumidor-python@nodo-unico] <- envio.despachado de productor-go@nodo-unico | SMS: la orden #3766 va en camino (InterRapidisimo, Barranquilla)

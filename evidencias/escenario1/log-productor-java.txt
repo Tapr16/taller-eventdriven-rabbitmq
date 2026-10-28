@@ -1,0 +1,12 @@
+﻿[productor-java] -> pago.aprobado orden=9767 monto=1639.69 metodo=nequi
+[productor-java] -> pago.rechazado orden=8916 monto=849.71 metodo=nequi
+[productor-java] -> pago.rechazado orden=3812 monto=65.99 metodo=pse
+[productor-java] -> pago.aprobado orden=9034 monto=323.45 metodo=pse
+[productor-java] -> pago.aprobado orden=6955 monto=406.00 metodo=efectivo
+[productor-java] -> pago.aprobado orden=6863 monto=1105.09 metodo=tarjeta
+[productor-java] -> pago.aprobado orden=5464 monto=1844.36 metodo=tarjeta
+[productor-java] -> pago.aprobado orden=5967 monto=1409.68 metodo=nequi
+[productor-java] -> pago.aprobado orden=2777 monto=312.04 metodo=tarjeta
+[productor-java] -> pago.aprobado orden=6819 monto=985.85 metodo=efectivo
+[productor-java] -> pago.rechazado orden=7264 monto=162.78 metodo=efectivo
+[productor-java] -> pago.aprobado orden=9886 monto=1051.53 metodo=efectivo

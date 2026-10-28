@@ -1,0 +1,5 @@
+﻿NAME                      IMAGE                        COMMAND                  SERVICE           CREATED         STATUS         PORTS
+esc3-n2-consumidor-go     esc3-nodo2-consumidor-go     "/app"                   consumidor-go     3 minutes ago   Up 3 minutes   
+esc3-n2-consumidor-node   esc3-nodo2-consumidor-node   "docker-entrypoint.s…"   consumidor-node   3 minutes ago   Up 3 minutes   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+esc3-n2-productor-go      esc3-nodo2-productor-go      "/app"                   productor-go      3 minutes ago   Up 3 minutes   
+esc3-n2-productor-node    esc3-nodo2-productor-node    "docker-entrypoint.s…"   productor-node    3 minutes ago   Up 3 minutes   

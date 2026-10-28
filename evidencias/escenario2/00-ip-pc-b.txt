@@ -1,0 +1,37 @@
+﻿IP del PC B (Nodo 1 - servicios): 10.6.62.137
+IP del PC A (Nodo 2 - broker): 10.6.62.18
+Fecha: 2026-10-28 09:15:24
+
+Test-NetConnection 10.6.62.18 -Port 5672:
+
+
+ComputerName     : 10.6.62.18
+RemoteAddress    : 10.6.62.18
+RemotePort       : 5672
+SourceAddress    : 10.6.62.137
+TcpTestSucceeded : True
+
+
+
+
+ipconfig:
+
+Configuraci�n IP de Windows
+
+
+Adaptador de Ethernet Ethernet:
+
+   Sufijo DNS espec�fico para la conexi�n. . : uis.local
+   V�nculo: direcci�n IPv6 local. . . : fe80::71e:5288:2927:81f5%11
+   Direcci�n IPv4. . . . . . . . . . . . . . : 10.6.62.137
+   M�scara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . : 10.6.62.1
+
+Adaptador de Ethernet vEthernet (WSL (Hyper-V firewall)):
+
+   Sufijo DNS espec�fico para la conexi�n. . : 
+   V�nculo: direcci�n IPv6 local. . . : fe80::4c62:7c18:e01:babf%27
+   Direcci�n IPv4. . . . . . . . . . . . . . : 172.20.48.1
+   M�scara de subred . . . . . . . . . . . . : 255.255.240.0
+   Puerta de enlace predeterminada . . . . . : 
+

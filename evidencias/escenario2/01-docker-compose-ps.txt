@@ -1,0 +1,9 @@
+﻿NAME                     IMAGE                                    COMMAND                  SERVICE             CREATED          STATUS          PORTS
+esc2-consumidor-go       esc2-nodo1-servicios-consumidor-go       "/app"                   consumidor-go       46 seconds ago   Up 44 seconds   
+esc2-consumidor-java     esc2-nodo1-servicios-consumidor-java     "/__cacert_entrypoin…"   consumidor-java     46 seconds ago   Up 45 seconds   
+esc2-consumidor-node     esc2-nodo1-servicios-consumidor-node     "docker-entrypoint.s…"   consumidor-node     46 seconds ago   Up 44 seconds   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+esc2-consumidor-python   esc2-nodo1-servicios-consumidor-python   "python -u consumer.…"   consumidor-python   46 seconds ago   Up 45 seconds   
+esc2-productor-go        esc2-nodo1-servicios-productor-go        "/app"                   productor-go        46 seconds ago   Up 44 seconds   
+esc2-productor-java      esc2-nodo1-servicios-productor-java      "/__cacert_entrypoin…"   productor-java      46 seconds ago   Up 45 seconds   
+esc2-productor-node      esc2-nodo1-servicios-productor-node      "docker-entrypoint.s…"   productor-node      46 seconds ago   Up 44 seconds   
+esc2-productor-python    esc2-nodo1-servicios-productor-python    "python -u producer.…"   productor-python    46 seconds ago   Up 45 seconds   
